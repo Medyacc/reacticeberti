@@ -1,0 +1,85 @@
+.story {
+    background: url('/images/storyback.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.storyCard {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 7px;
+}
+
+.stroyInfo {
+    flex: 1;
+    align-self: flex-start;
+    margin-top: 40px;
+}
+
+.stroyInfo h1 {
+    color: var(--primaryColor);
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.stroyInfo p {
+    color: var(--textColor);
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+.stroyImage {
+    flex: 1;
+}
+
+.stroyImage img {
+    width: 70%;
+    border-radius: 7px;
+}
+
+
+@media (max-width:996px) {
+    .storyCard {
+        gap: 10px;
+    }
+
+    .stroyInfo {
+        margin-top: 10px;
+    }
+
+    .stroyInfo h1 {
+        font-size: 30px;
+    }
+
+    .stroyInfo p {
+        color: var(--textColor);
+        line-height: 1.5;
+        font-size: 16px;
+    }
+
+    .stroyImage img {
+        width: 60%;
+    }
+
+}
+
+@media (max-width:776px) {
+    .storyCard {
+        flex-direction: column;
+    }
+
+    .stroyInfo {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .stroyImage img {
+        width: 100%;
+    }
+}

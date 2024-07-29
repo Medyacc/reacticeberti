@@ -1,0 +1,326 @@
+.navbar {
+    background: url('/images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+}
+
+.navbarcontainer {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.navMenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.navMenu .burgerMenu {
+    display: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navMenu .burgerMenu:hover {
+    opacity: 0.7;
+}
+
+.navMenu .navLeft {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navLeft .logo img {
+    width: 60px
+}
+
+.navLeft .navLinks {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.navLeft .navLinks li {
+    padding: 10px;
+    position: relative;
+}
+
+.navLeft .navLinks li::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: 0.5s;
+}
+
+
+/* Left to Right */
+body[dir="ltr"] .navLeft .navLinks li::before {
+    left: 10px;
+}
+
+body[dir="ltr"] .navLeft .navLinks li:hover::before {
+    width: 80%;
+}
+
+/* Right to Left */
+body[dir="rtl"] .navLeft .navLinks li::before {
+    right: 10px;
+}
+
+body[dir="rtl"] .navLeft .navLinks li:hover::before {
+    width: 80%;
+}
+
+
+.navRight {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navRight .languages,
+.navRight .iconGps {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navRight .languages:hover,
+.navRight .iconGps:hover {
+    opacity: 0.7;
+}
+
+
+/* Language Selector */
+
+.languages {
+    font-size: 18px;
+    position: relative;
+    z-index: 1000;
+}
+
+.language-options {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    color: black;
+}
+
+.language-options li {
+    padding: 7px 15px;
+    font-weight: 500;
+    font-size: 15px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.language-options li:hover {
+    background-color: rgb(216, 216, 216);
+}
+
+
+/* Language Selector */
+
+
+.navCenter {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    text-transform: capitalize;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.navCenter h2 {
+    width: 500px;
+    font-size: 70px;
+    line-height: 1.6;
+    text-transform: capitalize;
+    font-style: italic;
+    text-align: center;
+    font-weight: 800;
+}
+
+.navCenter img {
+    width: 350px;
+    position: relative;
+    animation: updown 5s infinite linear;
+}
+
+
+
+@media (max-width:996px) {
+
+    .navMenu {
+        height: 80px;
+    }
+
+    .navLeft .navLinks {
+        position: absolute;
+        flex-direction: column;
+        align-items: flex-start;
+        top: 0;
+        left: -1000px;
+        background-color: #020202;
+        color: white;
+        padding-top: 130px;
+        padding-left: 30px;
+        padding-right: 30px;
+        height: 100vh;
+        width: 100%;
+        z-index: 500;
+        transition: 0.5s;
+    }
+
+    .navLeft .navLinks.navlinksMobile {
+        left: 0
+    }
+
+    .navMenu .burgerMenu {
+        display: block;
+        z-index: 1000;
+    }
+
+    .navLeft .logo {
+        z-index: 1000;
+    }
+
+    .navLeft .logo img {
+        width: 50px;
+
+    }
+
+    .navRight {
+        gap: 13px
+    }
+
+    .navRight .iconGps {
+        font-size: 20px;
+    }
+
+    .languages {
+        font-size: 16px;
+    }
+
+    .language-options li {
+        font-size: 13px;
+    }
+
+    .navCenter {
+        padding-left: 30px;
+        padding-right: 30px;
+        gap: 80px;
+    }
+
+    .navCenter h2 {
+        font-size: 55px;
+    }
+
+    .navCenter img {
+        width: 270px;
+    }
+}
+
+@media (max-width:776px) {
+
+    .navLeft .navLinks {
+        background-color: #0d1a22;
+    }
+
+    .navLeft .logo img {
+        width: 47px
+    }
+
+
+    .navRight .iconGps {
+        font-size: 18px;
+    }
+
+    .languages {
+        font-size: 15px;
+    }
+
+    .language-options li {
+        font-size: 12px;
+        padding: 7px 10px;
+    }
+
+    .navCenter {
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-direction: column;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        gap: 0;
+    }
+
+    .navCenter h2 {
+        width: fit-content;
+        font-size: 40px;
+    }
+
+    .navCenter img {
+        width: 200px;
+        animation: none;
+        margin-top: 30px;
+    }
+
+}
+
+
+/* Small */
+@media (min-width: 768px) {
+    .navbarcontainer {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .navbarcontainer {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .navbarcontainer {
+        width: 1170px;
+    }
+}
+
+
+
+@keyframes updown {
+
+    0%,
+    100% {
+        top: 0;
+    }
+
+    50% {
+        top: -50px;
+    }
+}
