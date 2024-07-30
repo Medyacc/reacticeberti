@@ -114,13 +114,26 @@ body[dir="rtl"] .navLeft .navLinks li:hover::before {
     z-index: 1000;
 }
 
+
 .language-options {
+    display: none;
     position: absolute;
     top: 30px;
     left: 0;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
     color: black;
+}
+
+.language-options::before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent rgb(255, 255, 255) transparent;
 }
 
 .language-options li {
@@ -133,6 +146,10 @@ body[dir="rtl"] .navLeft .navLinks li:hover::before {
 
 .language-options li:hover {
     background-color: rgb(216, 216, 216);
+}
+
+.languages:hover .language-options {
+    display: block;
 }
 
 

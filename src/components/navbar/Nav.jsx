@@ -10,11 +10,8 @@ export default function Nav() {
 
     const [mobileMenu, setMobileMenu] = useState(false)
 
-    const [showOptions, setShowOptions] = useState(false);
-
     const handleLanguageChange = (lang) => {
         i18n.changeLanguage(lang);
-        setShowOptions(false);
     };
 
     useEffect(() => {
@@ -54,18 +51,16 @@ export default function Nav() {
                     <div className='navRight'>
                         <RoomIcon className='iconGps' />
                         <div className='languages'>
-                            <div className='language-selector' onClick={() => setShowOptions(!showOptions)}>
+                            <div className='language-selector'>
                                 {i18n.language === 'en' && 'English'}
                                 {i18n.language === 'fr' && 'Français'}
                                 {i18n.language === 'ar' && 'العربية'}
                             </div>
-                            {showOptions && (
-                                <ul className='language-options'>
-                                    <li onClick={() => handleLanguageChange('en')}>{t('language.en')}</li>
-                                    <li onClick={() => handleLanguageChange('fr')}>{t('language.fr')}</li>
-                                    <li onClick={() => handleLanguageChange('ar')}>{t('language.ar')}</li>
-                                </ul>
-                            )}
+                            <ul className='language-options'>
+                                <li onClick={() => handleLanguageChange('en')}>{t('language.en')}</li>
+                                <li onClick={() => handleLanguageChange('fr')}>{t('language.fr')}</li>
+                                <li onClick={() => handleLanguageChange('ar')}>{t('language.ar')}</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
