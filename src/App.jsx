@@ -18,7 +18,7 @@ i18n
       caches: ["cookie"],
     },
     backend: {
-      loadPath: '/locales/{{lng}}/translation.json',
+      loadPath: '/reacticeberti/locales/{{lng}}/translation.json',
     }
   });
 
