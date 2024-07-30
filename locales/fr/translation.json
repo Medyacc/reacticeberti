@@ -10,5 +10,9 @@
         "menu": "Menu",
         "contact": "Contact"
     },
-    "navInfo": "Ice Berti Mirleft est le meilleur endroit"
+    "navInfo": "Ice Berti Mirleft est le meilleur endroit",
+    "story": {
+        "title": "Notre Histoire",
+        "description": "L'histoire d'IceBerti a commencé il y a plus de 45 ans avec deux frères et un seul rêve. Depuis, beaucoup de choses ont changé, mais nos valeurs et notre engagement à servir un café au goût délicieux sont dans notre ADN."
+    }
 }
