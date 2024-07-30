@@ -10,7 +10,7 @@ export default function Story() {
                         <p>The IceBerti Story Started Over 45 Years Ago With Two Brothers And Just One Dream. Since Then, A Lot Has Changed, But Our Values And Commitment To Serving Great Tasting Coffee In Our DNA.</p>
                     </div>
                     <div className='stroyImage'>
-                        <img src="/images/story.jpg" alt="image" />
+                        <img src="./images/story.jpg" alt="image" />
                     </div>
                 </div>
             </div>

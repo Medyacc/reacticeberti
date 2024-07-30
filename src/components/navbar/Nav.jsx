@@ -33,7 +33,7 @@ export default function Nav() {
                     }
                     <div className='navLeft'>
                         <div className='logo'>
-                            <img src="/images/logolight.png" alt="logo" />
+                            <img src="./images/logolight.png" alt="logo" />
                         </div>
                         <ul className={`navLinks ${mobileMenu && "navlinksMobile"}`}>
                             <a><li>{t("navbar.home")}</li></a>
@@ -62,7 +62,7 @@ export default function Nav() {
                 </div>
                 <div className='navCenter'>
                     <h2>{t("navInfo")}</h2>
-                    <img src="/images/logolight.png" alt="logo" />
+                    <img src="./images/logolight.png" alt="logo" />
                 </div>
             </div>
         </div>
