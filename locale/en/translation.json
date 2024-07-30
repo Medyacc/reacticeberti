@@ -1,0 +1,14 @@
+{
+    "language": {
+        "ar": "Arabic",
+        "fr": "French",
+        "en": "English"
+    },
+    "navbar": {
+        "home": "Home",
+        "story": "Story",
+        "menu": "Menu",
+        "contact": "Contact"
+    },
+    "navInfo": "Ice Berti Mirleft Is The Best Place"
+}
