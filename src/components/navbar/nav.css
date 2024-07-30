@@ -178,7 +178,7 @@ body[dir="rtl"] .navLeft .navLinks li:hover::before {
     }
 
     .navLeft .navLinks {
-        position: absolute;
+        position: fixed;
         flex-direction: column;
         align-items: flex-start;
         top: 0;
@@ -196,6 +196,10 @@ body[dir="rtl"] .navLeft .navLinks li:hover::before {
 
     .navLeft .navLinks.navlinksMobile {
         left: 0
+    }
+
+    .body-overflow-hidden {
+        overflow: hidden;
     }
 
     .navMenu .burgerMenu {

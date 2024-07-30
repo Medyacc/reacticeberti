@@ -21,6 +21,15 @@ export default function Nav() {
         document.body.dir = i18n.dir();
     }, [i18n.language]);
 
+
+    useEffect(() => {
+        if (mobileMenu) {
+            document.body.classList.add('body-overflow-hidden');
+        } else {
+            document.body.classList.remove('body-overflow-hidden');
+        }
+    }, [mobileMenu]);
+
     const { t } = useTranslation();
 
     return (
@@ -28,8 +37,8 @@ export default function Nav() {
             <div className='navbarcontainer'>
                 <div className='navMenu'>
                     {
-                        mobileMenu ? <CloseIcon className='burgerMenu' onClick={() => setMobileMenu(prev => !prev)} /> :
-                            <MenuIcon className='burgerMenu' onClick={() => setMobileMenu(prev => !prev)} />
+                        mobileMenu ? <CloseIcon className='burgerMenu' onClick={() => setMobileMenu(false)} /> :
+                            <MenuIcon className='burgerMenu' onClick={() => setMobileMenu(true)} />
                     }
                     <div className='navLeft'>
                         <div className='logo'>
