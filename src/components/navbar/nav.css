@@ -177,12 +177,15 @@ body[dir="rtl"] .navLeft .navLinks li:hover::before {
         height: 80px;
     }
 
+    .body-overflow-hidden {
+        overflow: hidden;
+    }
+
     .navLeft .navLinks {
         position: fixed;
         flex-direction: column;
         align-items: flex-start;
         top: 0;
-        left: -1000px;
         background-color: #020202;
         color: white;
         padding-top: 130px;
@@ -198,9 +201,24 @@ body[dir="rtl"] .navLeft .navLinks li:hover::before {
         left: 0
     }
 
-    .body-overflow-hidden {
-        overflow: hidden;
+    /* Left to Right */
+    body[dir="ltr"] .navLeft .navLinks {
+        left: -1000px;
     }
+
+    body[dir="ltr"] .navLeft .navLinks.navlinksMobile {
+        left: 0;
+    }
+
+    /* Right to Left */
+    body[dir="rtl"] .navLeft .navLinks {
+        right: -1000px;
+    }
+
+    body[dir="rtl"] .navLeft .navLinks.navlinksMobile {
+        right: 0;
+    }
+
 
     .navMenu .burgerMenu {
         display: block;
