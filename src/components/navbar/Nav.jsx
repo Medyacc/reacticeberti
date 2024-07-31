@@ -42,7 +42,7 @@ export default function Nav() {
                             <a href='/'><img src="./images/logolight.png" alt="logo" /></a>
                         </div>
                         <ul className={`navLinks ${mobileMenu && "navlinksMobile"}`}>
-                            <a href='/' onClick={() => setMobileMenu(false)}><li>{t("navbar.home")}</li></a>
+                            <a href='#' onClick={() => setMobileMenu(false)}><li>{t("navbar.home")}</li></a>
                             <a href='#story' onClick={() => setMobileMenu(false)}><li>{t("navbar.story")}</li></a>
                             <a href='#menu' onClick={() => setMobileMenu(false)}><li>{t("navbar.menu")}</li></a>
                             <a href='#contact' onClick={() => setMobileMenu(false)}><li>{t("navbar.contact")}</li></a>
