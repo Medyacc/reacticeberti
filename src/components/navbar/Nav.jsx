@@ -39,13 +39,13 @@ export default function Nav() {
                     }
                     <div className='navLeft'>
                         <div className='logo'>
-                            <img src="./images/logolight.png" alt="logo" />
+                            <a href='/'><img src="./images/logolight.png" alt="logo" /></a>
                         </div>
                         <ul className={`navLinks ${mobileMenu && "navlinksMobile"}`}>
-                            <a><li>{t("navbar.home")}</li></a>
-                            <a><li>{t("navbar.story")}</li></a>
-                            <a><li>{t("navbar.menu")}</li></a>
-                            <a><li>{t("navbar.contact")}</li></a>
+                            <a href='/' onClick={() => setMobileMenu(false)}><li>{t("navbar.home")}</li></a>
+                            <a href='#story' onClick={() => setMobileMenu(false)}><li>{t("navbar.story")}</li></a>
+                            <a href='#menu' onClick={() => setMobileMenu(false)}><li>{t("navbar.menu")}</li></a>
+                            <a href='#contact' onClick={() => setMobileMenu(false)}><li>{t("navbar.contact")}</li></a>
                         </ul>
                     </div>
                     <div className='navRight'>

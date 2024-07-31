@@ -6,7 +6,7 @@ export default function Story() {
     const { t } = useTranslation();
 
     return (
-        <div className='story'>
+        <div id="story" className='story'>
             <div className='container'>
                 <div className='storyCard'>
                     <div className='stroyInfo'>
