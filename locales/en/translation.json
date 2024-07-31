@@ -14,5 +14,106 @@
     "story": {
         "title": "Our Story",
         "description": "The IceBerti Story Started Over 45 Years Ago With Two Brothers And Just One Dream. Since Then, A Lot Has Changed, But Our Values And Commitment To Serving Great Tasting Coffee In Our DNA."
+    },
+    "menu": {
+        "title": "Our Menu",
+        "list": {
+            "all": "All",
+            "coffee": "Coffee",
+            "pizza": "Pizza",
+            "juices": "Juices"
+        },
+        "products": [
+            {
+                "name": "coffee",
+                "detail": "Coffee Brazil",
+                "price": "60 Mad",
+                "img": "./images/products/coffee1.png"
+            },
+            {
+                "name": "coffee",
+                "detail": "Coffee Italien",
+                "price": "36 Mad",
+                "img": "./images/products/coffee2.png"
+            },
+            {
+                "name": "coffee",
+                "detail": "Coffee Maroc",
+                "price": "48 Mad",
+                "img": "./images/products/coffee3.png"
+            },
+            {
+                "name": "coffee",
+                "detail": "Coffee Espagne",
+                "price": "69 Mad",
+                "img": "./images/products/coffee4.png"
+            },
+            {
+                "name": "coffee",
+                "detail": "Coffee Esspresso",
+                "price": "75 Mad",
+                "img": "./images/products/coffee5.png"
+            },
+            {
+                "name": "pizza",
+                "detail": "Pizza Margarita",
+                "price": "120 Mad",
+                "img": "./images/products/pizza1.png"
+            },
+            {
+                "name": "pizza",
+                "detail": "Pizza Italien",
+                "price": "149 Mad",
+                "img": "./images/products/pizza2.png"
+            },
+            {
+                "name": "pizza",
+                "detail": "Pizza Seafood",
+                "price": "199 Mad",
+                "img": "./images/products/pizza3.png"
+            },
+            {
+                "name": "pizza",
+                "detail": "Pizza Dinde",
+                "price": "128 Mad",
+                "img": "./images/products/pizza4.png"
+            },
+            {
+                "name": "pizza",
+                "detail": "Pizza Thon",
+                "price": "110 Mad",
+                "img": "./images/products/pizza5.png"
+            },
+            {
+                "name": "juice",
+                "detail": "Juice Fraise",
+                "price": "68 Mad",
+                "img": "./images/products/juice1.png"
+            },
+            {
+                "name": "juice",
+                "detail": "Juice Panache",
+                "price": "55 Mad",
+                "img": "./images/products/juice2.png"
+            },
+            {
+                "name": "juice",
+                "detail": "Juice Monge",
+                "price": "64 Mad",
+                "img": "./images/products/juice3.png"
+            },
+            {
+                "name": "juice",
+                "detail": "Juice Watermelon",
+                "price": "41 Mad",
+                "img": "./images/products/juice4.png"
+            },
+            {
+                "name": "juice",
+                "detail": "Juice Banane",
+                "price": "38 Mad",
+                "img": "./images/products/juice5.png"
+            }
+        ]
     }
 }
