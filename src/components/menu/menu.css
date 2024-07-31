@@ -66,6 +66,9 @@ body[dir="rtl"] .menu .listMenu {
 }
 
 .cardProduct {
+    background: url('/images/storyback.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,8 +77,6 @@ body[dir="rtl"] .menu .listMenu {
     height: 300px;
     overflow: hidden;
     padding: 20px;
-    background: url('./images/storyback.jpg');
-    background-size: cover;
     border-radius: 20px;
 }
 
