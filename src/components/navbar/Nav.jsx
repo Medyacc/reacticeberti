@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 
 export default function Nav() {
 
@@ -31,7 +32,7 @@ export default function Nav() {
 
     return (
         <div className='navbar'>
-            <div className='navbarcontainer'>
+            <div className='container'>
                 <div className='navMenu'>
                     {
                         mobileMenu ? <CloseIcon className='burgerMenu' onClick={() => setMobileMenu(false)} /> :
@@ -39,7 +40,7 @@ export default function Nav() {
                     }
                     <div className='navLeft'>
                         <div className='logo'>
-                            <a href='/'><img src="./images/logolight.png" alt="logo" /></a>
+                            <h1>{t("logo.title1")}<span>{t("logo.title2")}</span></h1>
                         </div>
                         <ul className={`navLinks ${mobileMenu && "navlinksMobile"}`}>
                             <a href='#' onClick={() => setMobileMenu(false)}><li>{t("navbar.home")}</li></a>
@@ -66,9 +67,9 @@ export default function Nav() {
                 </div>
                 <div className='navCenter'>
                     <h2>{t("navInfo")}</h2>
-                    <img src="./images/logolight.png" alt="logo" />
                 </div>
             </div>
+            <a href='#story'><KeyboardDoubleArrowDownIcon className='arrowDoubleDown' /></a>
         </div>
     )
 }
