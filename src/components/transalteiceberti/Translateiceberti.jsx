@@ -6,6 +6,8 @@ export default function Translateiceberti() {
             <div className="content">
                 <p>IceBerti Mirleft <span>Is The Best</span> IceBerti Mirleft <span>Is The Best</span> IceBerti Mirleft <span>Is The Best</span> IceBerti Mirleft <span>Is The Best</span> IceBerti Mirleft <span>Is The Best </span> </p>
                 <p>IceBerti Mirleft <span>Is The Best</span> IceBerti Mirleft <span>Is The Best</span> IceBerti Mirleft <span>Is The Best</span> IceBerti Mirleft <span>Is The Best</span> IceBerti Mirleft <span>Is The Best </span> </p>
+                <p>IceBerti Mirleft <span>Is The Best</span> IceBerti Mirleft <span>Is The Best</span> IceBerti Mirleft <span>Is The Best</span> IceBerti Mirleft <span>Is The Best</span> IceBerti Mirleft <span>Is The Best </span> </p>
+                <p>IceBerti Mirleft <span>Is The Best</span> IceBerti Mirleft <span>Is The Best</span> IceBerti Mirleft <span>Is The Best</span> IceBerti Mirleft <span>Is The Best</span> IceBerti Mirleft <span>Is The Best </span> </p>
             </div>
         </div>
     );
