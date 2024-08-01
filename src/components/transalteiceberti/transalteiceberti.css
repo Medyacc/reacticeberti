@@ -1,0 +1,58 @@
+.translateiceberti {
+    width: 100%;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.translateiceberti .content {
+    display: inline-block;
+    animation: translateX 100s linear infinite;
+}
+
+@keyframes translateX {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.translateiceberti p {
+    display: inline-block;
+    white-space: nowrap;
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+    background: linear-gradient(to top, white 50%, transparent 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 80px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 5px;
+}
+
+.translateiceberti p span {
+    color: black;
+}
+
+
+@media (max-width:996px) {
+
+    .translateiceberti p {
+        font-size: 60px;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .translateiceberti p {
+        font-size: 50px;
+    }
+
+}
