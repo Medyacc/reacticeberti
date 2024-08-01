@@ -172,13 +172,19 @@
         position: relative !important;
     }
 
+    .swiper-button-prev::before,
+    .swiper-button-next::before {
+        width: 45px;
+        height: 45px;
+    }
+
     .swiper-button-prev {
-        top: 35px !important;
-        left: 39% !important;
+        top: 31px !important;
+        left: 40% !important;
     }
 
     .swiper-button-next {
         top: 22px !important;
-        left: 58% !important;
+        left: 56% !important;
     }
 }

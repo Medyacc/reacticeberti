@@ -17,6 +17,12 @@
   --swiper-navigation-size: 25px !important;
 }
 
+@media (max-width:500px) {
+  :root {
+    --swiper-navigation-size: 18px !important;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 6px;
   height: 5px;
