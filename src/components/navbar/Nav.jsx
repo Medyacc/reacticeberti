@@ -50,7 +50,7 @@ export default function Nav() {
                         </ul>
                     </div>
                     <div className='navRight'>
-                        <RoomIcon className='iconGps' />
+                        <a href='#gmaps' className='iconGps' onClick={() => setMobileMenu(false)} ><RoomIcon /></a>
                         <div className='languages'>
                             <div className='language-selector'>
                                 {i18n.language === 'en' && 'English'}

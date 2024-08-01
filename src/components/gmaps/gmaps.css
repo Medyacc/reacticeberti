@@ -1,0 +1,45 @@
+.gmaps {
+    background: url('/images/storyback.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    padding-top: 50px;
+}
+
+
+.gmaps .main-title {
+    border-color: black;
+}
+
+.gmaps-frame {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.gmaps-frame::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.541);
+}
+
+.gmaps-frame:hover::before {
+    display: none;
+}
+
+@media (max-width:996px) {
+    .gmaps {
+        height: 350px;
+    }
+}
+
+@media (max-width:768px) {
+    .gmaps {
+        height: 300px;
+    }
+}

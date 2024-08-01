@@ -1,4 +1,7 @@
 .translateiceberti {
+    background: url('/images/storyback.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     position: relative;
     padding-top: 10px;

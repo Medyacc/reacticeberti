@@ -95,10 +95,17 @@ body[dir="rtl"] .navLeft .navLinks li:hover::before {
     gap: 20px;
 }
 
+.navRight .iconGps :first-child {
+    font-size: 22px;
+    position: relative;
+    top: 2px;
+}
+
 .navRight .languages,
 .navRight .iconGps {
     cursor: pointer;
     transition: 0.3s;
+    z-index: 1000;
 }
 
 .navRight .languages:hover,
@@ -112,7 +119,6 @@ body[dir="rtl"] .navLeft .navLinks li:hover::before {
 .languages {
     font-size: 18px;
     position: relative;
-    z-index: 1000;
 }
 
 
@@ -266,7 +272,7 @@ body[dir="rtl"] .navLeft .navLinks li:hover::before {
         gap: 13px
     }
 
-    .navRight .iconGps {
+    .navRight .iconGps :first-child {
         font-size: 20px;
     }
 
@@ -297,7 +303,7 @@ body[dir="rtl"] .navLeft .navLinks li:hover::before {
         font-size: 14px;
     }
 
-    .navRight .iconGps {
+    .navRight .iconGps :first-child {
         font-size: 18px;
     }
 

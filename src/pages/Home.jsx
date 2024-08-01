@@ -1,3 +1,4 @@
+import Gmaps from '../components/gmaps/Gmaps'
 import Menu from '../components/menu/Menu'
 import Nav from '../components/navbar/Nav'
 import Scrolltotop from '../components/scrolltotop/Scrolltotop'
@@ -14,6 +15,7 @@ export default function Home() {
             <Swipermenu />
             <Translateiceberti />
             <Menu />
+            <Gmaps />
         </>
     )
 }
