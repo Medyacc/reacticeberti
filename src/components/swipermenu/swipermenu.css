@@ -1,0 +1,172 @@
+.swiperMenu {
+    background: url('/images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    position: relative;
+}
+
+
+.swiperMenu .container {
+    position: relative;
+}
+
+.itemMenu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemMenu img {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.itemMenu.active img {
+    display: block;
+    animation: fadeIn 0.5s forwards;
+}
+
+.itemMenu p {
+    text-transform: uppercase;
+    font-size: 120px;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    background: linear-gradient(to top, white 50%, transparent 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: background-position 1s;
+    background-size: 100% 200%;
+    background-position: 0 0;
+}
+
+.itemMenu p:hover {
+    background-position: 0 100%;
+
+}
+
+.itemMenu.active p {
+    background-position: 0 100%;
+    transition: background-position 1s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: white !important;
+    position: absolute !important;
+    font-weight: bold;
+    transition: 0.8s;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    color: black !important;
+}
+
+.swiper-button-prev::before,
+.swiper-button-next::before {
+    content: "";
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.397);
+    border: 1px solid white;
+    border-radius: 50%;
+    z-index: -1;
+    transition: 1s;
+}
+
+.swiper-button-prev:hover::before,
+.swiper-button-next:hover::before {
+    background-color: white
+}
+
+.swiper-button-prev {
+    left: 80px !important;
+}
+
+.swiper-button-next {
+    right: 80px !important;
+}
+
+@media (max-width:1200px) {
+    .itemMenu img {
+        width: 120px;
+        height: 120px;
+    }
+
+
+    .itemMenu p {
+        font-size: 90px;
+    }
+
+    .swiper-button-prev::before,
+    .swiper-button-next::before {
+        width: 50px;
+        height: 50px;
+    }
+
+    .swiper-button-prev {
+        left: 70px !important;
+    }
+
+    .swiper-button-next {
+        right: 70px !important;
+    }
+
+}
+
+
+@media (max-width:996px) {
+
+    .swiper-button-prev {
+        left: 50px !important;
+    }
+
+    .swiper-button-next {
+        right: 50px !important;
+    }
+}
+
+@media (max-width:500px) {
+    .itemMenu img {
+        width: 120px;
+        height: 120px;
+    }
+
+
+    .itemMenu p {
+        font-size: 90px;
+    }
+
+
+    .swiper-button-prev {
+        left: 30px !important;
+    }
+
+    .swiper-button-next {
+        right: 30px !important;
+    }
+}

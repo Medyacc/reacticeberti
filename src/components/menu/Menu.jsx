@@ -17,6 +17,7 @@ export default function Menu() {
         setMenuProducts(products)
     }, [t])
 
+
     const filter = (type) => {
         const products = t("menu.products", { returnObjects: true });
         if (type === 'All') {
