@@ -202,6 +202,14 @@ body[dir="rtl"] .navLeft .navLinks li:hover::before {
         height: 80px;
     }
 
+    .navLeft .logo h1 {
+        font-size: 22px;
+    }
+
+    .navLeft .logo h1 span {
+        font-size: 15px;
+    }
+
     .body-overflow-hidden {
         overflow: hidden;
     }
@@ -280,6 +288,14 @@ body[dir="rtl"] .navLeft .navLinks li:hover::before {
 }
 
 @media (max-width:776px) {
+
+    .navLeft .logo h1 {
+        font-size: 20px;
+    }
+
+    .navLeft .logo h1 span {
+        font-size: 14px;
+    }
 
     .navRight .iconGps {
         font-size: 18px;
