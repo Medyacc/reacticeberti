@@ -85,7 +85,7 @@ body[dir="rtl"] .navLeft .navLinks li::before {
 }
 
 body[dir="rtl"] .navLeft .navLinks li:hover::before {
-    width: 80%;
+    width: 80%
 }
 
 
