@@ -161,12 +161,18 @@
         font-size: 90px;
     }
 
+    .swiper-button-prev,
+    .swiper-button-next {
+        position: relative !important;
+    }
 
     .swiper-button-prev {
-        left: 30px !important;
+        top: 35px !important;
+        left: 39% !important;
     }
 
     .swiper-button-next {
-        right: 30px !important;
+        top: 22px !important;
+        left: 58% !important;
     }
 }
