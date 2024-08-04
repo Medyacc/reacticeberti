@@ -23,11 +23,11 @@ export default function Swipermenu() {
             img: coffeeImg
         },
         {
-            name: "Pizza",
+            name: "Milkshake",
             img: pizzaImg
         },
         {
-            name: "Juices",
+            name: "IceCream",
             img: juiceImg
         },
         {
@@ -70,11 +70,11 @@ export default function Swipermenu() {
     return (
         <div className='swiperMenu'>
             <Swiper
+                style={{ width: "100%" }}
                 modules={[Navigation]}
-                slidesPerView={5}
+                slidesPerView={3}
                 slidesPerGroup={1}
-                spaceBetween={50}
-                className='tCarousel'
+                spaceBetween={200}
                 centeredSlides={true}
                 loop={true}
                 onSlideChange={handleSlideChange}
@@ -87,10 +87,7 @@ export default function Swipermenu() {
                 }}
                 breakpoints={{
                     0: { slidesPerView: 1 },
-                    500: { slidesPerView: 2 },
-                    996: { slidesPerView: 3 },
-                    1200: { slidesPerView: 4 },
-                    1500: { slidesPerView: 5 }
+                    500: { slidesPerView: 3 },
                 }}
             >
                 {

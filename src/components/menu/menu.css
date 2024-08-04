@@ -1,7 +1,5 @@
 .menu {
-    background: url('/images/background.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-color: #0d0d0d;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -11,16 +9,8 @@
     width: 100%;
     grid-template-columns: 15% auto;
     border: 1px solid white;
-}
-
-body[dir="ltr"] .menu .boxMenu {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-}
-
-body[dir="rtl"] .menu .boxMenu {
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
 }
 
 .menu .listMenu {
@@ -29,15 +19,9 @@ body[dir="rtl"] .menu .boxMenu {
     justify-content: center;
     font-weight: 600;
     font-size: 20px;
-}
-
-body[dir="ltr"] .menu .listMenu {
     border-right: 1px solid white;
 }
 
-body[dir="rtl"] .menu .listMenu {
-    border-left: 1px solid white;
-}
 
 .menu .listMenu>li:first-child {
     border-top: 1px solid;
@@ -127,16 +111,8 @@ body[dir="rtl"] .menu .listMenu {
 @media (max-width:856px) {
     .menu .boxMenu {
         grid-template-columns: none;
-    }
-
-    body[dir="ltr"] .menu .boxMenu {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
-    }
-
-    body[dir="rtl"] .menu .boxMenu {
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
     }
 
     .menu .listMenu {
@@ -146,26 +122,12 @@ body[dir="rtl"] .menu .listMenu {
     .menu .listMenu>li {
         padding: 15px;
         border-bottom: 0;
-    }
-
-    body[dir="ltr"] .menu .listMenu>li {
         border-right: 1px solid
-    }
-
-    body[dir="rtl"] .menu .listMenu>li {
-        border-left: 1px solid
     }
 
     .menu .listMenu>li:first-child {
         border-top: 0;
-    }
-
-    body[dir="ltr"] .menu .listMenu>li:first-child {
         border-left: 1px solid;
-    }
-
-    body[dir="rtl"] .menu .listMenu>li:first-child {
-        border-right: 1px solid
     }
 
     .productMenu {

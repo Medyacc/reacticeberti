@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     text-align: center;
-    gap: 20px;
+    gap: 10px;
     padding: 20px;
     background-color: white;
     border-radius: 7px;
@@ -18,12 +18,15 @@
 
 .stroyInfo {
     flex: 1;
-    align-self: flex-start;
-    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .stroyInfo h1 {
-    color: var(--primaryColor);
+    background: linear-gradient(to right, #f5904a, #f47f30, #e86e23, #d9652a);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 40px;
     margin-bottom: 20px;
 }
@@ -32,6 +35,31 @@
     color: var(--textColor);
     line-height: 1.6;
     font-size: 20px;
+}
+
+.stroyInfo button {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: linear-gradient(to right, #f5904a, #f47f30, #e86e23, #d9652a);
+    color: white;
+    border-radius: 30px;
+    padding: 6px 15px 8px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 16px;
+}
+
+.stroyInfo button:hover {
+    opacity: 0.8;
+}
+
+.stroyInfo button .arrowRightIcon {
+    position: relative;
+    top: 2px;
+    font-size: 20px;
+    margin-right: -8px;
 }
 
 .stroyImage {

@@ -1,11 +1,12 @@
 import './nav.css'
-import RoomIcon from '@mui/icons-material/Room';
 import i18n from "i18next";
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
+import RoomIcon from '@mui/icons-material/Room';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
+
 
 export default function Nav() {
 
@@ -15,10 +16,6 @@ export default function Nav() {
         i18n.changeLanguage(lang);
     };
 
-    useEffect(() => {
-        document.body.dir = i18n.dir();
-    }, [i18n.language]);
-
 
     useEffect(() => {
         if (mobileMenu) {
@@ -27,6 +24,24 @@ export default function Nav() {
             document.body.classList.remove('body-overflow-hidden');
         }
     }, [mobileMenu]);
+
+    useEffect(() => {
+        let scroolicon = document.querySelector(".scrollicon");
+        let navCenter = document.querySelector(".navCenter");
+
+        setTimeout(() => {
+            if (navCenter) {
+                navCenter.style.opacity = 1;
+                navCenter.style.top = '50%';
+            }
+        }, 100);
+        setTimeout(() => {
+            if (scroolicon) {
+                scroolicon.style.opacity = 1;
+                scroolicon.style.bottom = 0;
+            }
+        }, 400);
+    }, []);
 
     const { t } = useTranslation();
 
@@ -40,36 +55,31 @@ export default function Nav() {
                     }
                     <div className='navLeft'>
                         <div className='logo'>
-                            <h1>{t("logo.title1")}<span>{t("logo.title2")}</span></h1>
+                            <h1>Ice Berti<span>Mirleft</span></h1>
                         </div>
                         <ul className={`navLinks ${mobileMenu && "navlinksMobile"}`}>
-                            <a href='#' onClick={() => setMobileMenu(false)}><li>{t("navbar.home")}</li></a>
-                            <a href='#story' onClick={() => setMobileMenu(false)}><li>{t("navbar.story")}</li></a>
                             <a href='#menu' onClick={() => setMobileMenu(false)}><li>{t("navbar.menu")}</li></a>
-                            <a href='#contact' onClick={() => setMobileMenu(false)}><li>{t("navbar.contact")}</li></a>
+                            <a href='#visitus' onClick={() => setMobileMenu(false)}><li>{t("navbar.visitus")}</li></a>
+                            <a href='#story' onClick={() => setMobileMenu(false)}><li>{t("navbar.story")}</li></a>
                         </ul>
                     </div>
                     <div className='navRight'>
-                        <a href='#gmaps' className='iconGps' onClick={() => setMobileMenu(false)} ><RoomIcon /></a>
                         <div className='languages'>
-                            <div className='language-selector'>
-                                {i18n.language === 'en' && 'English'}
-                                {i18n.language === 'fr' && 'Français'}
-                                {i18n.language === 'ar' && 'العربية'}
-                            </div>
-                            <ul className='language-options'>
-                                <li onClick={() => handleLanguageChange('en')}>{t('language.en')}</li>
-                                <li onClick={() => handleLanguageChange('fr')}>{t('language.fr')}</li>
-                                <li onClick={() => handleLanguageChange('ar')}>{t('language.ar')}</li>
-                            </ul>
+                            <span onClick={() => handleLanguageChange('en')}>En</span>
+                            <span onClick={() => handleLanguageChange('fr')}>Fr</span>
+                            <span onClick={() => handleLanguageChange('de')}>De</span>
                         </div>
                     </div>
                 </div>
                 <div className='navCenter'>
                     <h2>{t("navInfo")}</h2>
+                    <div className='navCenterBtn'>
+                        <a><RoomIcon className='navCenterBtnIcon' />Get Direction</a>
+                        <a><MailOutlineIcon className='navCenterBtnIcon' />Contact</a>
+                    </div>
                 </div>
             </div>
-            <a href='#story'><KeyboardDoubleArrowDownIcon className='arrowDoubleDown' /></a>
+            <a href='#story'><img className='scrollicon' src="./images/scroll.svg" alt="" /></a>
         </div>
     )
 }
