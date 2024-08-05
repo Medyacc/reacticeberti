@@ -31,7 +31,6 @@
     color: transparent;
     -webkit-text-stroke: 1px white;
     background: linear-gradient(to top, white 50%, white 50%);
-    -webkit-background-clip: text;
     background-clip: text;
     font-size: 50px;
     letter-spacing: 5px;

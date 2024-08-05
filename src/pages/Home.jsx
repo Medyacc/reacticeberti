@@ -1,7 +1,10 @@
+import Copyright from '../components/copyright/Copyright'
+import Footer from '../components/footer/Footer'
 import Gmaps from '../components/gmaps/Gmaps'
 import Menu from '../components/menu/Menu'
 import Nav from '../components/navbar/Nav'
 import Ouriceddrinks from '../components/ouriceddrinks/Ouriceddrinks'
+import PureWater from '../components/purewater/PureWater'
 import Scrolltotop from '../components/scrolltotop/Scrolltotop'
 import Story from '../components/story/Story'
 import Swipermenu from '../components/swipermenu/Swipermenu'
@@ -15,9 +18,12 @@ export default function Home() {
             <Story />
             <Swipermenu />
             <Ouriceddrinks />
-            <Translateiceberti />
             <Menu />
+            <Translateiceberti />
+            <PureWater />
             <Gmaps />
+            <Footer />
+            <Copyright />
         </>
     )
 }
