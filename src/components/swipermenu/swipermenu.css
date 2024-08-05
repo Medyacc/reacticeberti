@@ -17,13 +17,13 @@
     justify-content: center;
     flex: 1;
     width: 100%;
-    height: 130px;
+    height: 170px;
 }
 
 .itemMenu img {
     position: absolute;
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
     display: none;
     transition: all 0.3s ease-in-out;
 }
@@ -35,8 +35,7 @@
 
 .itemMenu p {
     text-transform: uppercase;
-    flex-basis: 100px;
-    font-size: 6vw;
+    font-size: 5vw;
     color: transparent;
     -webkit-text-stroke: 1px white;
     background: linear-gradient(to top, white 50%, transparent 50%);
@@ -68,7 +67,6 @@
         transform: scale(1);
     }
 }
-
 
 .swiper-button-prev,
 .swiper-button-next {
@@ -104,6 +102,7 @@
     background-color: white
 }
 
+
 .swiper-button-prev {
     left: 80px !important;
 }
@@ -116,9 +115,13 @@
 
 @media (max-width:1200px) {
 
-    .itemMenu img {
-        width: 120px;
+    .itemMenu {
         height: 120px;
+    }
+
+    .itemMenu img {
+        width: 110px;
+        height: 110px;
     }
 
 
@@ -145,6 +148,15 @@
 
 @media (max-width:996px) {
 
+    .itemMenu {
+        height: 100px;
+    }
+
+    .itemMenu img {
+        width: 95px;
+        height: 95px;
+    }
+
     .itemMenu p {
         font-size: 50px;
     }
@@ -160,6 +172,15 @@
 
 @media (max-width:768px) {
 
+    .itemMenu {
+        height: 90px;
+    }
+
+    .itemMenu img {
+        width: 80px;
+        height: 80px;
+    }
+
     .itemMenu p {
         font-size: 45px;
     }
@@ -169,6 +190,16 @@
 
 @media (max-width:650px) {
 
+
+    .itemMenu {
+        height: 80px;
+    }
+
+    .itemMenu img {
+        width: 75px;
+        height: 75px;
+    }
+
     .itemMenu p {
         font-size: 40px;
     }
@@ -177,20 +208,24 @@
 
 @media (max-width:500px) {
 
+    .itemMenu {
+        height: 120px;
+    }
+
+    .itemMenu p {
+        font-size: 55px;
+    }
+
     .swiperMenu {
         padding-top: 30px;
         padding-bottom: 60px;
     }
 
     .itemMenu img {
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
     }
 
-
-    .itemMenu p {
-        font-size: 60px;
-    }
 
     .swiper-button-prev,
     .swiper-button-next {

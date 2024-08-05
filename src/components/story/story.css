@@ -98,6 +98,13 @@
 }
 
 @media (max-width:776px) {
+
+    .story {
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+
+
     .storyCard {
         flex-direction: column;
     }

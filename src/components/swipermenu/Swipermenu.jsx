@@ -5,12 +5,12 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { useRef, useState } from 'react';
 import coffeeImg from '/images/products/coffee.png';
-import pizzaImg from '/images/products/pizza.png';
+import milkshakeImg from '/images/products/milkshak.png';
 import juiceImg from '/images/products/juice.png';
-import tacosImg from '/images/products/tacos.png';
-import cakeImg from '/images/products/cake.png';
-import burgerImg from '/images/products/burger.png';
-import pastryImg from '/images/products/pastry.png';
+import cocktailImg from '/images/products/cocktail.png';
+import icecreamImg from '/images/products/icecream.png';
+import hotdrinksImg from '/images/products/hotdrinks.png';
+import colddrinksImg from '/images/products/colddrinks.png';
 
 export default function Swipermenu() {
 
@@ -24,27 +24,27 @@ export default function Swipermenu() {
         },
         {
             name: "Milkshake",
-            img: pizzaImg
+            img: milkshakeImg
         },
         {
-            name: "IceCream",
+            name: "Juices",
             img: juiceImg
         },
         {
-            name: "Tacos",
-            img: tacosImg
+            name: "Cocktails",
+            img: cocktailImg
         },
         {
-            name: "Burger",
-            img: burgerImg
+            name: "IceCream",
+            img: icecreamImg
         },
         {
-            name: "Cake",
-            img: cakeImg
+            name: "HotDrinks",
+            img: hotdrinksImg
         },
         {
-            name: "Pastry",
-            img: pastryImg
+            name: "ColDrinks",
+            img: colddrinksImg
         },
 
     ];
@@ -70,7 +70,6 @@ export default function Swipermenu() {
     return (
         <div className='swiperMenu'>
             <Swiper
-                style={{ width: "100%" }}
                 modules={[Navigation]}
                 slidesPerView={3}
                 slidesPerGroup={1}
