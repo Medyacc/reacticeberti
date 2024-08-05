@@ -2,4 +2,196 @@
     background: #231f20;
     padding-top: 50px;
     padding-bottom: 50px;
+    color: white;
+}
+
+.footer .container {
+    display: flex;
+    gap: 100px;
+}
+
+.footerleft {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.footerleft .footersocial {
+    text-align: center;
+    margin-right: 20px;
+}
+
+.footerleft img {
+    width: 90px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.footerleft .socialicons :first-child {
+    margin-right: 10px;
+}
+
+.footerleft .footerplace {
+    margin-top: 15px;
+}
+
+.footerleft .footerplaceIcon {
+    margin-right: 10px;
+    font-size: 18px;
+    position: relative;
+    top: 2px;
+}
+
+.footerleft .footerplace p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 15px
+}
+
+.footerright {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.footerright .footerprivacy {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerright .footerprivacy a :first-child {
+    position: relative;
+    top: 3px;
+    margin-right: 5px;
+    font-size: 18px
+}
+
+.footerright .footerprivacy a {
+    margin-bottom: 10px;
+}
+
+.footerright .footerprivacy a span {
+    font-size: 15px
+}
+
+.footerright .footerfaq {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px
+}
+
+.footerright .footerfaq a {
+    margin-bottom: 10px;
+}
+
+
+@media (max-width:996px) {
+    .footer {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+
+    .footer .container {
+        width: 90%;
+        gap: 50px;
+    }
+
+    .footerleft {
+        gap: 20px;
+    }
+
+    .footerleft img {
+        width: 80px;
+    }
+
+    .footerleft .socialicons :first-child,
+    .footerleft .socialicons :last-child {
+        font-size: 20px !important;
+    }
+
+    .footerleft .footerplace p {
+        font-size: 13px;
+    }
+
+    .footerleft .footerplaceIcon {
+        font-size: 16px;
+    }
+
+    .footerright .footerprivacy a :first-child {
+        font-size: 16px
+    }
+
+    .footerright .footerprivacy a span {
+        font-size: 14px
+    }
+
+    .footerright .footerfaq {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+}
+
+
+@media (max-width:768px) {
+    .footer .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footerleft img {
+        width: 60px;
+    }
+
+    .footerleft .socialicons :first-child,
+    .footerleft .socialicons :last-child {
+        font-size: 18px !important;
+    }
+
+    .footerleft {
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footerright {
+        margin-top: 0;
+        gap: 50px;
+
+    }
+
+    .footerleft .footerplace {
+        margin-top: 0
+    }
+}
+
+@media (max-width:500px) {
+
+
+    .footer .container {
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footerleft .footerplace p {
+        font-size: 12px;
+    }
+
+    .footerleft .footerplaceIcon {
+        font-size: 14px;
+    }
+
+    .footerright .footerprivacy a :first-child {
+        font-size: 15px
+    }
+
+    .footerright .footerprivacy a span {
+        font-size: 12px
+    }
+
+    .footerright .footerfaq {
+        font-size: 12px;
+    }
 }
