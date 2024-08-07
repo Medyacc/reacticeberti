@@ -1,22 +1,36 @@
 {
     "navbar": {
-        "menu": "Menu",
-        "visitus": "Visit Us",
-        "story": "Our Story"
+        "menu": "Menü",
+        "visitus": "Besuchen Sie uns",
+        "story": "Unsere Geschichte"
     },
-    "navInfo": "Welcome to Ice Berti Where Every Scoop Tells a Story",
+    "navInfo": "Willkommen bei Ice Berti, wo jede Kugel eine Geschichte erzählt",
+    "btnnavbar": {
+        "direction": "Route berechnen",
+        "contact": "Kontakt"
+    },
     "story": {
-        "title": "Our Story",
-        "description": "The IceBerti Story Started Over 45 Years Ago With Two Brothers And Just One Dream. Since Then, A Lot Has Changed, But Our Values And Commitment To Serving Great Tasting Coffee In Our DNA."
+        "title": "Unsere Geschichte",
+        "description": "Die Geschichte von IceBerti begann vor über 45 Jahren mit zwei Brüdern und nur einem Traum. Seitdem hat sich viel verändert, aber unsere Werte und unser Engagement, großartig schmeckenden Kaffee zu servieren, sind in unserer DNA.",
+        "findoutmore": "Mehr erfahren"
+    },
+    "swipermenu": {
+        "coffee": "Kaffee",
+        "milkshake": "Milchshake",
+        "juices": "Säfte",
+        "cocktails": "Cocktails",
+        "iceCream": "Eis",
+        "hotDrinks": "Heißgetränke",
+        "colDrinks": "Kaltgetränke"
+    },
+    "ouriced": {
+        "description": "Unsere Eiskaffees bieten den gleichen großartigen Kaffee, serviert auf Eis",
+        "title": "Unser Menü ist voller guter Dinge",
+        "paragraphe": "Egal welche Diät oder Vorlieben Sie haben, es gibt genug Auswahl für alle.",
+        "btn": "Mehr erfahren"
     },
     "menu": {
-        "title": "Our Menu",
-        "list": {
-            "all": "All",
-            "coffee": "Coffee",
-            "pizza": "Pizza",
-            "juices": "Juices"
-        },
+        "title": "Unser Menü",
         "products": [
             {
                 "name": "coffee",
@@ -31,55 +45,55 @@
                 "img": "./images/products/coffee2.png"
             },
             {
-                "name": "coffee",
+                "name": "colddrinks",
                 "detail": "Coffee Maroc",
                 "price": "48 Mad",
                 "img": "./images/products/coffee3.png"
             },
             {
-                "name": "coffee",
+                "name": "icecream",
                 "detail": "Coffee Espagne",
                 "price": "69 Mad",
                 "img": "./images/products/coffee4.png"
             },
             {
-                "name": "coffee",
+                "name": "icecream",
                 "detail": "Coffee Esspresso",
                 "price": "75 Mad",
                 "img": "./images/products/coffee5.png"
             },
             {
-                "name": "pizza",
+                "name": "milkshake",
                 "detail": "Pizza Margarita",
                 "price": "120 Mad",
                 "img": "./images/products/pizza1.png"
             },
             {
-                "name": "pizza",
+                "name": "milkshake",
                 "detail": "Pizza Italien",
                 "price": "149 Mad",
                 "img": "./images/products/pizza2.png"
             },
             {
-                "name": "pizza",
+                "name": "milkshake",
                 "detail": "Pizza Seafood",
                 "price": "199 Mad",
                 "img": "./images/products/pizza3.png"
             },
             {
-                "name": "pizza",
+                "name": "cocktail",
                 "detail": "Pizza Dinde",
                 "price": "128 Mad",
                 "img": "./images/products/pizza4.png"
             },
             {
-                "name": "pizza",
+                "name": "cocktail",
                 "detail": "Pizza Thon",
                 "price": "110 Mad",
                 "img": "./images/products/pizza5.png"
             },
             {
-                "name": "juice",
+                "name": "hotdrinks",
                 "detail": "Juice Fraise",
                 "price": "68 Mad",
                 "img": "./images/products/juice1.png"
@@ -109,5 +123,10 @@
                 "img": "./images/products/juice5.png"
             }
         ]
+    },
+    "translateiceberti": "Kommen Sie in den Ice Berti Raum.",
+    "purewater": {
+        "title": "Beginnt mit reinem Wasser",
+        "description": "Wir verwenden einen 7-stufigen Umkehrosmose-Filter Aqua 7 Pure, um unsere Produkte herzustellen"
     }
 }
