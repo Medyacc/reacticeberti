@@ -5,18 +5,32 @@
         "story": "Our Story"
     },
     "navInfo": "Welcome to Ice Berti Where Every Scoop Tells a Story",
+    "btnnavbar": {
+        "direction": "Get Direction",
+        "contact": "Contact"
+    },
     "story": {
         "title": "Our Story",
-        "description": "The IceBerti Story Started Over 45 Years Ago With Two Brothers And Just One Dream. Since Then, A Lot Has Changed, But Our Values And Commitment To Serving Great Tasting Coffee In Our DNA."
+        "description": "The IceBerti Story Started Over 45 Years Ago With Two Brothers And Just One Dream. Since Then, A Lot Has Changed, But Our Values And Commitment To Serving Great Tasting Coffee In Our DNA.",
+        "findoutmore": "Find out more"
+    },
+    "swipermenu": {
+        "coffee": "Coffee",
+        "milkshake": "Milkshake",
+        "juices": "Juices",
+        "cocktails": "Cocktails",
+        "iceCream": "IceCream",
+        "hotDrinks": "HotDrinks",
+        "colDrinks": "ColDrinks"
+    },
+    "ouriced": {
+        "description": "Our iced drinks feature the same great coffee, served over ice",
+        "title": "Our menu's full of the good stuff",
+        "paragraphe": "Whatever your diet or preferences, there's enough choice for everyone.",
+        "btn": "Find out more"
     },
     "menu": {
         "title": "Our Menu",
-        "list": {
-            "all": "All",
-            "coffee": "Coffee",
-            "pizza": "Pizza",
-            "juices": "Juices"
-        },
         "products": [
             {
                 "name": "coffee",
@@ -31,55 +45,55 @@
                 "img": "./images/products/coffee2.png"
             },
             {
-                "name": "coffee",
+                "name": "colddrinks",
                 "detail": "Coffee Maroc",
                 "price": "48 Mad",
                 "img": "./images/products/coffee3.png"
             },
             {
-                "name": "coffee",
+                "name": "icecream",
                 "detail": "Coffee Espagne",
                 "price": "69 Mad",
                 "img": "./images/products/coffee4.png"
             },
             {
-                "name": "coffee",
+                "name": "icecream",
                 "detail": "Coffee Esspresso",
                 "price": "75 Mad",
                 "img": "./images/products/coffee5.png"
             },
             {
-                "name": "pizza",
+                "name": "milkshake",
                 "detail": "Pizza Margarita",
                 "price": "120 Mad",
                 "img": "./images/products/pizza1.png"
             },
             {
-                "name": "pizza",
+                "name": "milkshake",
                 "detail": "Pizza Italien",
                 "price": "149 Mad",
                 "img": "./images/products/pizza2.png"
             },
             {
-                "name": "pizza",
+                "name": "milkshake",
                 "detail": "Pizza Seafood",
                 "price": "199 Mad",
                 "img": "./images/products/pizza3.png"
             },
             {
-                "name": "pizza",
+                "name": "cocktail",
                 "detail": "Pizza Dinde",
                 "price": "128 Mad",
                 "img": "./images/products/pizza4.png"
             },
             {
-                "name": "pizza",
+                "name": "cocktail",
                 "detail": "Pizza Thon",
                 "price": "110 Mad",
                 "img": "./images/products/pizza5.png"
             },
             {
-                "name": "juice",
+                "name": "hotdrinks",
                 "detail": "Juice Fraise",
                 "price": "68 Mad",
                 "img": "./images/products/juice1.png"
@@ -109,5 +123,10 @@
                 "img": "./images/products/juice5.png"
             }
         ]
+    },
+    "translateiceberti": "Come To Ice Berti Space.",
+    "purewater": {
+        "title": "Begins with pure water",
+        "description": "We use a 7 Stage Reserve Osmosis Filter Aqua 7 Pure to make our products"
     }
 }

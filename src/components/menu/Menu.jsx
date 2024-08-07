@@ -1,61 +1,102 @@
 import { useEffect, useState } from 'react'
-import './menu.css'
-import { useAutoAnimate } from '@formkit/auto-animate/react'
 import { useTranslation } from 'react-i18next'
+import './menu.css'
+import 'swiper/css';
+import 'swiper/css/navigation';
+import coffeeImg from '/images/products/menucoffee.jpg';
+import milkshakeImg from '/images/products/menumilkshake.jpg';
+import juiceImg from '/images/products/menujuices.jpg';
+import cocktailImg from '/images/products/menucocktails.jpg';
+import icecreamImg from '/images/products/menuicecream.jpg';
+import hotdrinksImg from '/images/products/menuhotdrinks.jpg';
+import colddrinksImg from '/images/products/menucoldrinks.jpg';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import Productsmenu from './productsmenu/Productsmenu';
 
 export default function Menu() {
+    const dataMenu = [
+        { img: coffeeImg, type: 'coffee' },
+        { img: milkshakeImg, type: 'milkshake' },
+        { img: juiceImg, type: 'juice' },
+        { img: cocktailImg, type: 'cocktail' },
+        { img: icecreamImg, type: 'icecream' },
+        { img: hotdrinksImg, type: 'hotdrinks' },
+        { img: colddrinksImg, type: 'colddrinks' }
+    ];
 
-    const [parent] = useAutoAnimate()
+    const [selectedImage, setSelectedImage] = useState(null);
+    const [menuProducts, setMenuProducts] = useState([]);
+    const [displayedProducts, setDisplayedProducts] = useState([]);
+
     const { t } = useTranslation();
-
-
-    const [menuProducts, setMenuProducts] = useState([])
-    const [selectedFilter, setSelectedFilter] = useState('All')
 
     useEffect(() => {
         const products = t("menu.products", { returnObjects: true });
-        setMenuProducts(products)
-    }, [t])
+        console.log("Fetched products: ", products);
+        setMenuProducts(products);
+        const categories = [...new Set(products.map(product => product.name))];
+        const initialDisplay = categories.map(category =>
+            products.find(product => product.name === category)
+        );
+        setDisplayedProducts(initialDisplay);
+        console.log("Initial display products: ", initialDisplay);
+    }, [t]);
 
-
-    const filter = (type) => {
-        const products = t("menu.products", { returnObjects: true });
-        if (type === 'All') {
-            setMenuProducts(products)
+    const handleImageClick = (index) => {
+        console.log("Image clicked at index: ", index);
+        setSelectedImage(index === selectedImage ? null : index);
+        if (index === selectedImage) {
+            const categories = [...new Set(menuProducts.map(product => product.name))];
+            const initialDisplay = categories.map(category =>
+                menuProducts.find(product => product.name === category)
+            );
+            setDisplayedProducts(initialDisplay);
+            console.log("Display reset to initial products: ", initialDisplay);
         } else {
-            setMenuProducts(products.filter((product) => product.name === type))
+            filterProducts(dataMenu[index].type);
         }
-        setSelectedFilter(type)
-    }
+    };
+
+    const filterProducts = (type) => {
+        console.log("Filtering products for type: ", type);
+        const filtered = menuProducts.filter((product) => product.name === type);
+        setDisplayedProducts(filtered);
+        console.log(`Filtered products for type ${type}:`, filtered);
+    };
+
     return (
         <div id="menu" className='menu'>
-            <h1 className='main-title'>{t("menu.title")}</h1>
+            <h1 className='menutitle'>{t("menu.title")}</h1>
             <div className='container'>
-                <div className='boxMenu'>
-                    <ul className="listMenu">
-                        <li className={selectedFilter === 'All' ? 'activeli' : ''} onClick={() => filter("All")}>{t("menu.list.all")}</li>
-                        <li className={selectedFilter === 'coffee' ? 'activeli' : ''} onClick={() => filter("coffee")}>{t("menu.list.coffee")}</li>
-                        <li className={selectedFilter === 'pizza' ? 'activeli' : ''} onClick={() => filter("pizza")}>{t("menu.list.pizza")}</li>
-                        <li className={selectedFilter === 'juice' ? 'activeli' : ''} onClick={() => filter("juice")}>{t("menu.list.juices")}</li>
-                    </ul>
-
-                    <div className="productMenu" ref={parent}>
-                        {
-                            Array.isArray(menuProducts) && menuProducts.map((product, i) => (
-                                <div key={i} className="cardProduct">
-                                    <div className='imgProduct'>
-                                        <img src={product.img} alt="image" />
-                                    </div>
-                                    <div className="description">
-                                        <p>{product.detail}</p>
-                                        <p>{product.price}</p>
-                                    </div>
-                                </div>
-                            ))
+                <Swiper
+                    slidesPerView={1}
+                    slidesPerGroup={1}
+                    spaceBetween={50}
+                    breakpoints={{
+                        320: {
+                            slidesPerView: 3,
+                        },
+                        480: {
+                            slidesPerView: 4,
+                        },
+                        640: {
+                            slidesPerView: 5,
+                        },
+                        1024: {
+                            slidesPerView: 6,
                         }
-                    </div>
-                </div>
+                    }}
+                >
+                    {
+                        dataMenu.map((item, i) => (
+                            <SwiperSlide key={i}>
+                                <img src={item.img} alt="" className={selectedImage === i ? 'selected' : ''} onClick={() => handleImageClick(i)} />
+                            </SwiperSlide>
+                        ))
+                    }
+                </Swiper>
+                <Productsmenu menuProducts={displayedProducts} />
             </div>
         </div>
-    )
+    );
 }

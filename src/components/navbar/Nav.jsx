@@ -74,8 +74,8 @@ export default function Nav() {
                 <div className='navCenter'>
                     <h2>{t("navInfo")}</h2>
                     <div className='navCenterBtn'>
-                        <a><RoomIcon className='navCenterBtnIcon' />Get Direction</a>
-                        <a><MailOutlineIcon className='navCenterBtnIcon' />Contact</a>
+                        <a href="#visitus"><RoomIcon className='navCenterBtnIcon' />{t("btnnavbar.direction")}</a>
+                        <a href='#footer'><MailOutlineIcon className='navCenterBtnIcon' />{t("btnnavbar.contact")}</a>
                     </div>
                 </div>
             </div>

@@ -16,7 +16,7 @@ export default function Story() {
                     <div className='stroyInfo'>
                         <h1>{t("story.title")}</h1>
                         <p>{t("story.description")}</p>
-                        <button>Find out more <ArrowRightIcon className='arrowRightIcon' /></button>
+                        <button>{t("story.findoutmore")} <ArrowRightIcon className='arrowRightIcon' /></button>
                     </div>
                 </div>
             </div>

@@ -60,12 +60,12 @@
 .ouriceddrinksDownInfo h2 {
     font-weight: 900;
     word-spacing: 3px;
-    font-size: 45px;
+    font-size: 40px;
     margin-bottom: 20px;
 }
 
 .ouriceddrinksDownInfo p {
-    font-size: 30px;
+    font-size: 28px;
     color: rgba(255, 255, 255, 0.767);
 }
 
@@ -140,11 +140,11 @@
 
 
     .ouriceddrinksDownInfo h2 {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .ouriceddrinksDownInfo p {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .ouriceddrinksDownInfo button {

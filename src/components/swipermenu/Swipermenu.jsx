@@ -11,39 +11,42 @@ import cocktailImg from '/images/products/cocktail.png';
 import icecreamImg from '/images/products/icecream.png';
 import hotdrinksImg from '/images/products/hotdrinks.png';
 import colddrinksImg from '/images/products/colddrinks.png';
+import { useTranslation } from 'react-i18next';
 
 export default function Swipermenu() {
 
     const [activeIndex, setActiveIndex] = useState(0);
     const swiperRef = useRef(null);
+    const { t } = useTranslation();
 
     const data = [
         {
-            name: "Coffee",
+            name: t("swipermenu.coffee"),
             img: coffeeImg
         },
+
         {
-            name: "Milkshake",
-            img: milkshakeImg
-        },
-        {
-            name: "Juices",
-            img: juiceImg
-        },
-        {
-            name: "Cocktails",
-            img: cocktailImg
-        },
-        {
-            name: "IceCream",
-            img: icecreamImg
-        },
-        {
-            name: "HotDrinks",
+            name: t("swipermenu.hotDrinks"),
             img: hotdrinksImg
         },
         {
-            name: "ColDrinks",
+            name: t("swipermenu.juices"),
+            img: juiceImg
+        },
+        {
+            name: t("swipermenu.milkshake"),
+            img: milkshakeImg
+        },
+        {
+            name: t("swipermenu.iceCream"),
+            img: icecreamImg
+        },
+        {
+            name: t("swipermenu.cocktails"),
+            img: cocktailImg
+        },
+        {
+            name: t("swipermenu.colDrinks"),
             img: colddrinksImg
         },
 
