@@ -34,93 +34,45 @@
         "products": [
             {
                 "name": "coffee",
-                "detail": "Coffee Brazil",
+                "detail": "Schwarzer Kaffee",
                 "price": "60 Mad",
-                "img": "./images/products/coffee1.png"
-            },
-            {
-                "name": "coffee",
-                "detail": "Coffee Italien",
-                "price": "36 Mad",
-                "img": "./images/products/coffee2.png"
+                "img": "./images/products/coffeeblack.jpg"
             },
             {
                 "name": "colddrinks",
-                "detail": "Coffee Maroc",
+                "detail": "Mineralwasser",
                 "price": "48 Mad",
-                "img": "./images/products/coffee3.png"
+                "img": "./images/products/colddrinkswater.jpg"
             },
             {
                 "name": "icecream",
-                "detail": "Coffee Espagne",
+                "detail": "Erdbeer-Eisbecher",
                 "price": "69 Mad",
-                "img": "./images/products/coffee4.png"
-            },
-            {
-                "name": "icecream",
-                "detail": "Coffee Esspresso",
-                "price": "75 Mad",
-                "img": "./images/products/coffee5.png"
+                "img": "./images/products/icecreamchocolat.jpg"
             },
             {
                 "name": "milkshake",
-                "detail": "Pizza Margarita",
+                "detail": "Erdbeer-Milchshake",
                 "price": "120 Mad",
-                "img": "./images/products/pizza1.png"
-            },
-            {
-                "name": "milkshake",
-                "detail": "Pizza Italien",
-                "price": "149 Mad",
-                "img": "./images/products/pizza2.png"
-            },
-            {
-                "name": "milkshake",
-                "detail": "Pizza Seafood",
-                "price": "199 Mad",
-                "img": "./images/products/pizza3.png"
+                "img": "./images/products/milkshakfraise.jpg"
             },
             {
                 "name": "cocktail",
-                "detail": "Pizza Dinde",
+                "detail": "Mojito",
                 "price": "128 Mad",
-                "img": "./images/products/pizza4.png"
-            },
-            {
-                "name": "cocktail",
-                "detail": "Pizza Thon",
-                "price": "110 Mad",
-                "img": "./images/products/pizza5.png"
+                "img": "./images/products/cocktailmojito.jpg"
             },
             {
                 "name": "hotdrinks",
-                "detail": "Juice Fraise",
+                "detail": "Cappuccino",
                 "price": "68 Mad",
-                "img": "./images/products/juice1.png"
+                "img": "./images/products/hotdrinkscappuccino.jpg"
             },
             {
                 "name": "juice",
-                "detail": "Juice Panache",
+                "detail": "Apfelsaft",
                 "price": "55 Mad",
-                "img": "./images/products/juice2.png"
-            },
-            {
-                "name": "juice",
-                "detail": "Juice Monge",
-                "price": "64 Mad",
-                "img": "./images/products/juice3.png"
-            },
-            {
-                "name": "juice",
-                "detail": "Juice Watermelon",
-                "price": "41 Mad",
-                "img": "./images/products/juice4.png"
-            },
-            {
-                "name": "juice",
-                "detail": "Juice Banane",
-                "price": "38 Mad",
-                "img": "./images/products/juice5.png"
+                "img": "./images/products/juiceapple.jpg"
             }
         ]
     },
