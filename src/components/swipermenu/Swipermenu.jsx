@@ -53,7 +53,7 @@ export default function Swipermenu() {
     };
 
     return (
-        <div className='menu'>
+        <div id="menu" className='menu'>
             <div className='swiperMenu'>
                 <Swiper
                     modules={[Navigation]}
