@@ -5,12 +5,12 @@ import { useTranslation } from 'react-i18next';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import RoomIcon from '@mui/icons-material/Room';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
 
 
 export default function Nav() {
 
     const [mobileMenu, setMobileMenu] = useState(false)
+    const [scrolled, setScrolled] = useState(false);
 
     const handleLanguageChange = (lang) => {
         i18n.changeLanguage(lang);
@@ -43,19 +43,36 @@ export default function Nav() {
         }, 400);
     }, []);
 
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     const { t } = useTranslation();
 
     return (
-        <div className='navbar'>
-            <div className='container'>
-                <div className='navMenu'>
+        <div className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+            <div className='navMenu'>
+                <div className='container'>
                     {
                         mobileMenu ? <CloseIcon className='burgerMenu' onClick={() => setMobileMenu(false)} /> :
                             <MenuIcon className='burgerMenu' onClick={() => setMobileMenu(true)} />
                     }
                     <div className='navLeft'>
-                        <div className='logo'>
-                            <h1>Ice Berti<span>Mirleft</span></h1>
+                        <div className={`logo ${scrolled ? 'hide-logo' : ''}`}>
+                            <h1 className={` ${scrolled ? 'show-title' : 'hide-title'}`}>Ice Berti<span>Mirleft</span></h1>
+                            <img src="./images/logo.png" alt="" />
                         </div>
                         <ul className={`navLinks ${mobileMenu && "navlinksMobile"}`}>
                             <a href='#menu' onClick={() => setMobileMenu(false)}><li>{t("navbar.menu")}</li></a>
@@ -71,15 +88,14 @@ export default function Nav() {
                         </div>
                     </div>
                 </div>
-                <div className='navCenter'>
-                    <h2>{t("navInfo")}</h2>
-                    <div className='navCenterBtn'>
-                        <a href="#visitus"><RoomIcon className='navCenterBtnIcon' />{t("btnnavbar.direction")}</a>
-                        <a href='#footer'><MailOutlineIcon className='navCenterBtnIcon' />{t("btnnavbar.contact")}</a>
-                    </div>
+            </div>
+            <div className='navCenter'>
+                <h2>{t("navInfo")}</h2>
+                <div className='navCenterBtn'>
+                    <a href="#visitus"><RoomIcon className='navCenterBtnIcon' />{t("btnnavbar.direction")}</a>
                 </div>
             </div>
             <a href='#story'><img className='scrollicon' src="./images/scroll.svg" alt="" /></a>
-        </div>
+        </div >
     )
 }

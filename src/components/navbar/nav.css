@@ -10,16 +10,21 @@
     position: relative;
 }
 
-.navbar .container {
-    position: relative;
-    height: 100%;
+.navMenu {
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    border-bottom: 10px solid white;
+    background: linear-gradient(to right, #f5904a, #f5904a, #f47f30, #e86e23, #d9652a, #d9652a);
+    z-index: 1000;
 }
 
-.navMenu {
+.navMenu .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100px;
+    margin-top: 15px;
 }
 
 .navMenu .burgerMenu {
@@ -38,6 +43,21 @@
     gap: 40px;
 }
 
+.navLeft .logo {
+    position: relative;
+}
+
+.navLeft .logo img {
+    transition: all 0.5s ease;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+}
+
 .navLeft .logo h1 {
     display: flex;
     flex-direction: column;
@@ -47,6 +67,34 @@
     letter-spacing: 2px;
     font-size: 30px;
     margin-right: 30px;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+/* Scroll states */
+.navbar.scrolled .logo img {
+    top: 0;
+    opacity: 0;
+}
+
+.navbar.scrolled .logo h1 {
+    opacity: 1;
+    top: 50px;
+}
+
+.hide-logo img {
+    opacity: 0;
+    transform: translateY(-50px);
+}
+
+.show-title {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hide-title {
+    opacity: 0;
+    transform: translateY(-50px);
 }
 
 .navLeft .logo h1 span {
@@ -54,7 +102,7 @@
     font-size: 18px;
     font-weight: 800;
     position: relative;
-    background: linear-gradient(to right, #f5904a, #f47f30, #e86e23, #d9652a);
+    background: var(--blackColor);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -65,7 +113,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: linear-gradient(to right, #f5904a, #f47f30, #e86e23, #d9652a);
+    background: var(--blackColor);
     height: 3px;
     width: 9px;
 }
@@ -135,9 +183,10 @@
 
 .navCenter {
     position: absolute;
-    top: 70%;
+    top: 50%;
     opacity: 0;
-    transform: translateY(-50%);
+    left: 30%;
+    transform: translate(-30%, -50%);
     width: 600px;
     display: flex;
     flex-direction: column;
@@ -230,6 +279,15 @@
         height: 80px;
     }
 
+    .navMenu .container {
+        margin-top: 10px;
+    }
+
+    .navLeft .logo img {
+        width: 85px;
+        top: 20px;
+    }
+
     .navLeft .logo {
         margin-left: 30px;
     }
@@ -254,7 +312,7 @@
         top: 0;
         left: -1000px;
         font-size: 17px;
-        background-color: #161616;
+        background: linear-gradient(to right, #f5904a, #f47f30, #e86e23, #d9652a);
         color: white;
         padding-top: 130px;
         padding-left: 30px;
@@ -300,10 +358,7 @@
 @media (max-width:776px) {
 
     .navbar {
-        background: url('/images/backgroundmobile.jpg');
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
+        background-size: 230% 100%
     }
 
     .navLeft .logo h1 {

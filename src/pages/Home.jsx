@@ -1,4 +1,3 @@
-import Copyright from '../components/copyright/Copyright'
 import Footer from '../components/footer/Footer'
 import Gmaps from '../components/gmaps/Gmaps'
 import Menu from '../components/menu/Menu'
@@ -23,7 +22,6 @@ export default function Home() {
             <PureWater />
             <Gmaps />
             <Footer />
-            <Copyright />
         </>
     )
 }
