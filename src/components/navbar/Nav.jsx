@@ -11,14 +11,23 @@ export default function Nav() {
 
     const [mobileMenu, setMobileMenu] = useState(false)
     const [scrolled, setScrolled] = useState(false);
+    const [selectedLanguage, setSelectedLanguage] = useState('en'); // Default language
+    const [dropdownOpen, setDropdownOpen] = useState(false);
+
 
     const handleLanguageChange = (lang) => {
         i18n.changeLanguage(lang);
+        setSelectedLanguage(lang);
+        setDropdownOpen(false); // Close the dropdown after selecting a language
+    };
+
+    const toggleDropdown = () => {
+        setDropdownOpen(!dropdownOpen); // Toggle dropdown visibility
     };
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 50) {
+            if (window.scrollY > 10) {
                 setScrolled(true);
             } else {
                 setScrolled(false);
@@ -62,6 +71,12 @@ export default function Nav() {
 
     const { t } = useTranslation();
 
+    const languages = {
+        en: { name: 'English', flag: './images/en.webp' },
+        fr: { name: 'Français', flag: './images/fr.webp' },
+        de: { name: 'Deutsch', flag: './images/de.webp' }
+    };
+
     return (
         <div className={`navbar ${scrolled ? 'scrolled' : ''}`}>
             <div className='navMenu'>
@@ -83,9 +98,22 @@ export default function Nav() {
                     </div>
                     <div className='navRight'>
                         <div className='languages'>
-                            <span onClick={() => handleLanguageChange('en')}>En</span>
-                            <span onClick={() => handleLanguageChange('fr')}>Fr</span>
-                            <span onClick={() => handleLanguageChange('de')}>De</span>
+                            <span onClick={toggleDropdown}>
+                                <img src={languages[selectedLanguage].flag} alt="" className="flag-icon" />
+                                {languages[selectedLanguage].name}
+                            </span>
+                            {dropdownOpen && (
+                                <div className='languagesDropdown'>
+                                    {Object.keys(languages).map((lang) => (
+                                        lang !== selectedLanguage && (
+                                            <span key={lang} onClick={() => handleLanguageChange(lang)}>
+                                                <img src={languages[lang].flag} alt="" className="flag-icon" />
+                                                {languages[lang].name}
+                                            </span>
+                                        )
+                                    ))}
+                                </div>
+                            )}
                         </div>
                     </div>
                 </div>

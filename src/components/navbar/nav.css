@@ -128,20 +128,56 @@
 }
 
 .navRight .languages {
-    font-size: 20px;
     display: flex;
     align-items: center;
     gap: 10px;
     cursor: pointer;
+    position: relative;
     z-index: 1000;
 }
 
 .languages span {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
     transition: 0.3s;
 }
 
 .languages span:hover {
     opacity: 0.5;
+}
+
+.languagesDropdown {
+    position: absolute;
+    top: 40px;
+    left: -15px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.languagesDropdown::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent white;
+}
+
+.languagesDropdown span:first-of-type {
+    margin-bottom: 10px;
+}
+
+.flag-icon {
+    width: 20px;
+    height: 15px;
+    margin-right: 7px;
 }
 
 /* Language Selector */
@@ -304,8 +340,13 @@
         gap: 13px
     }
 
-    .languages {
+    .languages span {
         font-size: 16px;
+    }
+
+    .flag-icon {
+        width: 18px;
+        height: 13px;
     }
 
     .navCenter h2 {
@@ -330,7 +371,14 @@
     }
 
     .languages span {
-        font-size: 15px;
+        font-size: 14px;
+    }
+
+    .flag-icon {
+        width: 17px;
+        height: 12px;
+        position: relative;
+        top: 1px;
     }
 
     .navCenter {
