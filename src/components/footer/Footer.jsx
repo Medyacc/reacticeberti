@@ -22,7 +22,7 @@ export default function Footer() {
                 <div className='footerup'>
                     <div className="footerleft">
                         <div className="footersocial">
-                            <img src="./images/logo.png" alt="" />
+                            <img src="./images/logo.webp" alt="" />
                             <div className='socialicons'>
                                 <a href='https://www.facebook.com/IceBertiMirleft' target='_blank'><FacebookIcon /></a>
                                 <a href='https://www.facebook.com/IceBertiMirleft' target='_blank'><InstagramIcon /></a>

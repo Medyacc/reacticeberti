@@ -14,7 +14,7 @@ export default function PureWater() {
                         <p>{t("purewater.description")}</p>
                     </div>
                     <div className='purewaterImg'>
-                        <img src="./images/purewater.jpg" alt="" />
+                        <img src="./images/purewater.webp" alt="" />
                     </div>
                 </div>
             </div>

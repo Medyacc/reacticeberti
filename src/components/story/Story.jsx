@@ -11,7 +11,7 @@ export default function Story() {
             <div className='container'>
                 <div className='storyCard'>
                     <div className='stroyImage'>
-                        <img src="./images/story.jpg" alt="image" />
+                        <img src="./images/story.webp" alt="image" />
                     </div>
                     <div className='stroyInfo'>
                         <h1>{t("story.title")}</h1>

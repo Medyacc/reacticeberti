@@ -3,13 +3,13 @@ import { useTranslation } from 'react-i18next'
 import './menu.css'
 import 'swiper/css';
 import 'swiper/css/navigation';
-import coffeeImg from '/images/products/menucoffee.jpg';
-import milkshakeImg from '/images/products/menumilkshake.jpg';
-import juiceImg from '/images/products/menujuices.jpg';
-import cocktailImg from '/images/products/menucocktails.jpg';
-import icecreamImg from '/images/products/menuicecream.jpg';
-import hotdrinksImg from '/images/products/menuhotdrinks.jpg';
-import colddrinksImg from '/images/products/menucoldrinks.jpg';
+import coffeeImg from '/images/products/menucoffee.webp';
+import milkshakeImg from '/images/products/menumilkshake.webp';
+import juiceImg from '/images/products/menujuices.webp';
+import cocktailImg from '/images/products/menucocktails.webp';
+import icecreamImg from '/images/products/menuicecream.webp';
+import hotdrinksImg from '/images/products/menuhotdrinks.webp';
+import colddrinksImg from '/images/products/menucoldrinks.webp';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Productsmenu from './productsmenu/Productsmenu';
 

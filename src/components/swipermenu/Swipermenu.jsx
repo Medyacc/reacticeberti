@@ -4,13 +4,13 @@ import './swipermenu.css'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { useRef, useState } from 'react';
-import coffeeImg from '/images/products/coffee.png';
-import milkshakeImg from '/images/products/milkshak.png';
-import juiceImg from '/images/products/juice.png';
-import cocktailImg from '/images/products/cocktail.png';
-import icecreamImg from '/images/products/icecream.png';
-import hotdrinksImg from '/images/products/hotdrinks.png';
-import colddrinksImg from '/images/products/colddrinks.png';
+import coffeeImg from '/images/products/coffee.webp';
+import milkshakeImg from '/images/products/milkshak.webp';
+import juiceImg from '/images/products/juice.webp';
+import cocktailImg from '/images/products/cocktail.webp';
+import icecreamImg from '/images/products/icecream.webp';
+import hotdrinksImg from '/images/products/hotdrinks.webp';
+import colddrinksImg from '/images/products/colddrinks.webp';
 import { useTranslation } from 'react-i18next';
 
 export default function Swipermenu() {

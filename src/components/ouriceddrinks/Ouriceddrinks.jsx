@@ -10,7 +10,7 @@ export default function Ouriceddrinks() {
         <div className='ouriceddrinks'>
             <div className='container'>
                 <div className='ouriceddrinksUp'>
-                    <img src="./images/coffeecup.png" alt="" />
+                    <img src="./images/coffeecup.webp" alt="" />
                     <p>{t("ouriced.description")}</p>
                 </div>
                 <div className='ouriceddrinksDown'>
@@ -20,7 +20,7 @@ export default function Ouriceddrinks() {
                         <button>{t("ouriced.btn")} <ArrowRightIcon className='arrowRightIcon' /></button>
                     </div>
                     <div className='ouriceddrinksDownImg'>
-                        <img src="./images/icecoffee.jpg" alt="" />
+                        <img src="./images/icecoffee.webp" alt="" />
                     </div>
                 </div>
             </div>

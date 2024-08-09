@@ -72,7 +72,7 @@ export default function Nav() {
                     <div className='navLeft'>
                         <div className={`logo ${scrolled ? 'hide-logo' : ''}`}>
                             <h1 className={` ${scrolled ? 'show-title' : 'hide-title'}`}>Ice Berti<span>Mirleft</span></h1>
-                            <img src="./images/logo.png" alt="" />
+                            <img src="./images/logo.webp" alt="" />
                         </div>
                         <ul className={`navLinks ${mobileMenu && "navlinksMobile"}`}>
                             <a href='#menu' onClick={() => setMobileMenu(false)}><li>{t("navbar.menu")}</li></a>
@@ -96,6 +96,6 @@ export default function Nav() {
                 </div>
             </div>
             <a href='#story'><img className='scrollicon' src="./images/scroll.svg" alt="" /></a>
-        </div >
+        </div>
     )
 }
