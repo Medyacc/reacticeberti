@@ -36,43 +36,43 @@
                 "name": "coffee",
                 "detail": "Black Coffee",
                 "price": "60 Mad",
-                "img": "./images/products/coffeeblack.jpg"
+                "img": "./images/products/coffeeblack.webp"
             },
             {
                 "name": "colddrinks",
                 "detail": "Mineral Water",
                 "price": "48 Mad",
-                "img": "./images/products/colddrinkswater.jpg"
+                "img": "./images/products/colddrinkswater.webp"
             },
             {
                 "name": "icecream",
                 "detail": "Chocolate ice cream",
                 "price": "69 Mad",
-                "img": "./images/products/icecreamchocolat.jpg"
+                "img": "./images/products/icecreamchocolat.webp"
             },
             {
                 "name": "milkshake",
                 "detail": "Strawberry milkshake",
                 "price": "120 Mad",
-                "img": "./images/products/milkshakfraise.jpg"
+                "img": "./images/products/milkshakfraise.webp"
             },
             {
                 "name": "cocktail",
                 "detail": "Mojito",
                 "price": "128 Mad",
-                "img": "./images/products/cocktailmojito.jpg"
+                "img": "./images/products/cocktailmojito.webp"
             },
             {
                 "name": "hotdrinks",
                 "detail": "Cappuccino",
                 "price": "68 Mad",
-                "img": "./images/products/hotdrinkscappuccino.jpg"
+                "img": "./images/products/hotdrinkscappuccino.webp"
             },
             {
                 "name": "juice",
                 "detail": "Apple Juice",
                 "price": "55 Mad",
-                "img": "./images/products/juiceapple.jpg"
+                "img": "./images/products/juiceapple.webp"
             }
         ]
     },
