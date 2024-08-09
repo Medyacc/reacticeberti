@@ -16,6 +16,22 @@ export default function Nav() {
         i18n.changeLanguage(lang);
     };
 
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
 
     useEffect(() => {
         if (mobileMenu) {
@@ -43,21 +59,6 @@ export default function Nav() {
         }, 400);
     }, []);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 50) {
-                setScrolled(true);
-            } else {
-                setScrolled(false);
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
 
     const { t } = useTranslation();
 
@@ -71,7 +72,7 @@ export default function Nav() {
                     }
                     <div className='navLeft'>
                         <div className={`logo ${scrolled ? 'hide-logo' : ''}`}>
-                            <h1 className={` ${scrolled ? 'show-title' : 'hide-title'}`}>Ice Berti<span>Mirleft</span></h1>
+                            <img className={` ${scrolled ? 'showlogo2' : 'hidelogo2'}`} src="./images/logo2.webp" alt="" />
                             <img src="./images/logo.webp" alt="" />
                         </div>
                         <ul className={`navLinks ${mobileMenu && "navlinksMobile"}`}>
