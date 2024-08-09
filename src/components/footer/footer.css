@@ -43,7 +43,7 @@
 }
 
 .footerleft .socialicons :first-child {
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .footerleft .footerplace {
@@ -119,7 +119,20 @@
 .copyright .socialicons {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
+}
+
+.copyright .socialicons a {
+    color: black;
+}
+
+.copyright .socialicons p {
+    position: relative;
+    top: -2px;
+}
+
+.copyright .socialicons a:first-of-type {
+    margin-right: -7px;
 }
 
 .footer .arrowupfooter,
@@ -223,6 +236,11 @@
     .footer .arrowupfooter,
     .footer .arrowdownfooter {
         font-size: 25px;
+    }
+
+    .footer .arrowupfooter {
+        position: relative;
+        top: -2px;
     }
 
     .footer .arrowdownfooter {

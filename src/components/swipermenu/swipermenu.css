@@ -1,5 +1,5 @@
 .swiperMenu {
-    background-color: #0d0d0d;
+    background-color: var(--blackColor);
     padding-top: 30px;
     padding-bottom: 30px;
     width: 100%;

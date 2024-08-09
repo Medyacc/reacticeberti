@@ -1,5 +1,5 @@
 .menu {
-    background-color: #0d0d0d;
+    background-color: var(--blackColor);
     padding-top: 50px;
     padding-bottom: 50px;
     color: white;

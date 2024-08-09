@@ -24,8 +24,8 @@ export default function Footer() {
                         <div className="footersocial">
                             <img src="./images/logo.png" alt="" />
                             <div className='socialicons'>
-                                <FacebookIcon />
-                                <InstagramIcon />
+                                <a href='https://www.facebook.com/IceBertiMirleft' target='_blank'><FacebookIcon /></a>
+                                <a href='https://www.facebook.com/IceBertiMirleft' target='_blank'><InstagramIcon /></a>
                             </div>
                         </div>
                         <div className="footerplace">
@@ -51,8 +51,8 @@ export default function Footer() {
                 <div className='container'>
                     <p>Copyright  &#169; ice Berti Mirleft. All rights reserved</p>
                     <div className='socialicons'>
-                        <FacebookIcon />
-                        <InstagramIcon />
+                        <a href='https://www.facebook.com/IceBertiMirleft' target='_blank'><FacebookIcon /></a>
+                        <a href='https://www.facebook.com/IceBertiMirleft' target='_blank'><InstagramIcon /></a>
                         <p className={`${showFooterUp ? 'hide' : 'show'}`}>Find out more about IceBerti</p>
                         <KeyboardArrowUpIcon className={`arrowupfooter ${showFooterUp ? 'hide' : 'show'}`} onClick={toggleFooterUp} />
 
