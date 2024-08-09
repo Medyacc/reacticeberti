@@ -40,7 +40,7 @@
 .navMenu .navLeft {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 80px;
 }
 
 .navLeft .logo {
@@ -95,7 +95,7 @@
 .navLeft .navLinks {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
     font-size: 20px;
     font-weight: 600;
     cursor: pointer;
@@ -189,7 +189,7 @@
     opacity: 0;
     left: 30%;
     transform: translate(-30%, -50%);
-    width: 600px;
+    width: 650px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -203,7 +203,7 @@
     text-align: center;
     font-style: italic;
     font-weight: 700;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     transition: 1s;
 }
 
@@ -217,18 +217,15 @@
     gap: 10px;
     padding: 7px 25px;
     border-radius: 5px;
+    border: 1px solid #f47f30;
+    background: linear-gradient(to right, #f5904a, #f47f30, #e86e23, #d9652a);
     cursor: pointer;
     position: relative;
     transition: 0.5s;
     overflow: hidden;
+    font-size: 18px;
 }
 
-
-.navCenterBtn a {
-    border: 1px solid;
-    border-color: #f47f30;
-    background: linear-gradient(to right, #f5904a, #f47f30, #e86e23, #d9652a);
-}
 
 .navCenterBtn a::before {
     content: "";
@@ -297,7 +294,7 @@
         gap: 20px;
         top: 0;
         left: -1000px;
-        font-size: 17px;
+        font-size: 20px;
         background: linear-gradient(to right, #f5904a, #f47f30, #e86e23, #d9652a);
         color: white;
         padding-top: 130px;
@@ -336,6 +333,11 @@
         height: 13px;
     }
 
+    .navCenter {
+        width: 500px;
+        left: 25%;
+    }
+
     .navCenter h2 {
         font-size: 50px;
     }
@@ -364,21 +366,18 @@
     .flag-icon {
         width: 17px;
         height: 12px;
-        position: relative;
-        top: 1px;
     }
 
     .navCenter {
-        width: 90%;
-        padding-right: 50px;
+        width: 260px;
     }
 
     .navCenter h2 {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .navCenterBtn a {
-        font-size: 13px;
+        font-size: 12px;
         padding: 5px 10px;
     }
 

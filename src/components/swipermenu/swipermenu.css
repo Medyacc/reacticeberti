@@ -1,7 +1,12 @@
-.swiperMenu {
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+.menu {
     background-color: var(--blackColor);
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+.swiperMenu {
     width: 100%;
     position: relative;
 }
@@ -37,6 +42,7 @@
     text-transform: uppercase;
     font-size: 4.5vw;
     color: transparent;
+    font-family: "Luckiest Guy", cursive;
     -webkit-text-stroke: 1px white;
     background: linear-gradient(to top, white 50%, transparent 50%);
     -webkit-background-clip: text;
@@ -196,7 +202,7 @@
 @media (max-width:500px) {
 
     .itemMenu {
-        height: 120px;
+        height: 110px;
     }
 
     .itemMenu p {
@@ -204,8 +210,7 @@
     }
 
     .swiperMenu {
-        padding-top: 30px;
-        padding-bottom: 60px;
+        padding-bottom: 40px;
     }
 
     .itemMenu img {

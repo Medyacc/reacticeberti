@@ -1,6 +1,5 @@
 import Footer from '../components/footer/Footer'
-import Gmaps from '../components/gmaps/Gmaps'
-import Menu from '../components/menu/Menu'
+// import Menu from '../components/menu/Menu'
 import Nav from '../components/navbar/Nav'
 import Ouriceddrinks from '../components/ouriceddrinks/Ouriceddrinks'
 import PureWater from '../components/purewater/PureWater'
@@ -16,11 +15,10 @@ export default function Home() {
             <Nav />
             <Story />
             <Swipermenu />
+            {/* <Menu /> */}
             <Ouriceddrinks />
-            <Menu />
             <Translateiceberti />
             <PureWater />
-            <Gmaps />
             <Footer />
         </>
     )

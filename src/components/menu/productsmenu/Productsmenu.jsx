@@ -1,10 +1,14 @@
 import './productsmenu.css'
 import { useAutoAnimate } from '@formkit/auto-animate/react'
 
-export default function Productsmenu({ menuProducts }) {
+export default function Productsmenu({ menuProducts, selectedCategory }) {
 
 
     const [parent] = useAutoAnimate()
+
+    const filteredProducts = menuProducts.filter(
+        product => product.name === selectedCategory
+    );
 
 
 
@@ -15,7 +19,7 @@ export default function Productsmenu({ menuProducts }) {
 
                 <div className="productMenu" ref={parent}>
                     {
-                        menuProducts.map((product, i) => (
+                        filteredProducts.map((product, i) => (
                             <div key={i} className="cardProduct">
                                 <div className='imgProduct'>
                                     <img src={product.img} alt="image" />
