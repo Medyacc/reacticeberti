@@ -208,36 +208,29 @@
 }
 
 .navCenterBtn {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+    text-align: center;
 }
 
 .navCenterBtn a {
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 5px 20px;
+    padding: 7px 25px;
     border-radius: 5px;
     cursor: pointer;
     position: relative;
     transition: 0.5s;
+    overflow: hidden;
 }
 
 
-.navCenterBtn a:first-child {
+.navCenterBtn a {
     border: 1px solid;
     border-color: #f47f30;
     background: linear-gradient(to right, #f5904a, #f47f30, #e86e23, #d9652a);
 }
 
-.navCenterBtn a:last-child {
-    border: 1px solid white;
-    background-color: rgba(255, 255, 255, 0.144);
-}
-
-.navCenterBtn a:first-child::before,
-.navCenterBtn a:last-child::before {
+.navCenterBtn a::before {
     content: "";
     position: absolute;
     top: 0;
@@ -247,19 +240,13 @@
     transition: 0.5s;
 }
 
-.navCenterBtn a:first-child:hover {
+.navCenterBtn a:hover {
     background: transparent;
 }
 
-.navCenterBtn a:first-child:hover::before {
-    right: 0;
-    background-color: rgba(255, 255, 255, 0.144);
-    width: 100%;
-}
-
-.navCenterBtn a:last-child:hover::before {
+.navCenterBtn a:hover::before {
     left: 0;
-    background: linear-gradient(to right, #f5904a, #f47f30, #e86e23, #d9652a);
+    background-color: rgba(255, 255, 255, 0.144);
     width: 100%;
 }
 
@@ -382,14 +369,12 @@
     }
 
     .navCenter {
-        width: fit-content;
-        padding-left: 30px;
-        padding-right: 30px;
+        width: 90%;
+        padding-right: 50px;
     }
 
     .navCenter h2 {
-        width: fit-content;
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .navCenterBtn a {
