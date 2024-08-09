@@ -185,7 +185,7 @@
 
 .navCenter {
     position: absolute;
-    top: 50%;
+    top: 70%;
     opacity: 0;
     left: 30%;
     transform: translate(-30%, -50%);
