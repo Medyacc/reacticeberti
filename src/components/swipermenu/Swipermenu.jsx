@@ -12,7 +12,7 @@ import icecreamImg from '/images/products/icecream.webp';
 import hotdrinksImg from '/images/products/hotdrinks.webp';
 import colddrinksImg from '/images/products/colddrinks.webp';
 import { useTranslation } from 'react-i18next';
-import Productsmenu from '../menu/productsmenu/Productsmenu'
+import Productsmenu from '../productsmenu/Productsmenu'
 
 export default function Swipermenu() {
 
