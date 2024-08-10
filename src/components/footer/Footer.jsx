@@ -25,7 +25,7 @@ export default function Footer() {
                             <img src="./images/logo.webp" alt="" />
                             <div className='socialicons'>
                                 <a href='https://www.facebook.com/IceBertiMirleft' target='_blank'><FacebookIcon /></a>
-                                <a href='https://www.facebook.com/IceBertiMirleft' target='_blank'><InstagramIcon /></a>
+                                <a href='https://www.instagram.com/icebertimirleft/' target='_blank'><InstagramIcon /></a>
                             </div>
                         </div>
                         <div className="footerplace">
@@ -52,7 +52,7 @@ export default function Footer() {
                     <p>Copyright  &#169; ice Berti Mirleft. All rights reserved</p>
                     <div className='socialicons'>
                         <a href='https://www.facebook.com/IceBertiMirleft' target='_blank'><FacebookIcon /></a>
-                        <a href='https://www.facebook.com/IceBertiMirleft' target='_blank'><InstagramIcon /></a>
+                        <a href='https://www.instagram.com/icebertimirleft/' target='_blank'><InstagramIcon /></a>
                         <p className={`${showFooterUp ? 'hide' : 'show'}`}>Find out more about IceBerti</p>
                         <KeyboardArrowUpIcon className={`arrowupfooter ${showFooterUp ? 'hide' : 'show'}`} onClick={toggleFooterUp} />
 
