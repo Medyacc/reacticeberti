@@ -11,18 +11,18 @@ export default function Nav() {
 
     const [mobileMenu, setMobileMenu] = useState(false)
     const [scrolled, setScrolled] = useState(false);
-    const [selectedLanguage, setSelectedLanguage] = useState('en'); // Default language
+    const [selectedLanguage, setSelectedLanguage] = useState('en');
     const [dropdownOpen, setDropdownOpen] = useState(false);
 
 
     const handleLanguageChange = (lang) => {
         i18n.changeLanguage(lang);
         setSelectedLanguage(lang);
-        setDropdownOpen(false); // Close the dropdown after selecting a language
+        setDropdownOpen(false);
     };
 
     const toggleDropdown = () => {
-        setDropdownOpen(!dropdownOpen); // Toggle dropdown visibility
+        setDropdownOpen(!dropdownOpen);
     };
 
     useEffect(() => {

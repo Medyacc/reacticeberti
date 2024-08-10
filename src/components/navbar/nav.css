@@ -189,7 +189,7 @@
     opacity: 0;
     left: 30%;
     transform: translate(-30%, -50%);
-    width: 650px;
+    width: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -198,7 +198,7 @@
 }
 
 .navCenter h2 {
-    font-size: 65px;
+    font-size: 55px;
     line-height: 1.4;
     text-align: center;
     font-style: italic;
@@ -334,12 +334,12 @@
     }
 
     .navCenter {
-        width: 500px;
-        left: 25%;
+        width: 450px;
+        left: 20%;
     }
 
     .navCenter h2 {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .scrollicon {
@@ -349,11 +349,6 @@
 }
 
 @media (max-width:776px) {
-
-    .navbar {
-        background-size: 230% 100%
-    }
-
 
     .navLeft .logo img:first-of-type {
         width: 85px;
@@ -369,20 +364,20 @@
     }
 
     .navCenter {
-        width: 260px;
+        width: 250px;
     }
 
     .navCenter h2 {
-        font-size: 28px;
+        font-size: 25px;
     }
 
     .navCenterBtn a {
-        font-size: 12px;
+        font-size: 10px;
         padding: 5px 10px;
     }
 
     .navCenterBtnIcon {
-        font-size: 16px !important;
+        font-size: 14px !important;
         position: relative;
         top: 1px;
     }
