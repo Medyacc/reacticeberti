@@ -1,12 +1,59 @@
 .loading {
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(to right, #f5904a, #f47f30, #e86e23, #d9652a);
     display: flex;
-    align-items: center;
+    text-align: center;
     justify-content: center;
-    font-size: 30px;
-    letter-spacing: 3px;
-    font-weight: bold;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #f5904a, #f47f30, #e86e23, #d9652a);
+}
+
+.loading .ring {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: ring 2s linear infinite;
+}
+
+@keyframes ring {
+    0% {
+        transform: rotate(0deg);
+        box-shadow: 1px 5px 2px #f81c1c;
+    }
+
+    50% {
+        transform: rotate(180deg);
+        box-shadow: 1px 5px 2px white;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        box-shadow: 1px 5px 2px #f81c1c;
+    }
+}
+
+.loading .ring:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255, 255, 255, .3);
+}
+
+.loading span {
     color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 200px;
+    animation: text 3s ease-in-out infinite;
+}
+
+@keyframes text {
+    50% {
+        color: #e86e23;
+    }
 }

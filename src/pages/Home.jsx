@@ -12,7 +12,10 @@ const Translateiceberti = React.lazy(() => import('../components/transalteiceber
 
 export default function Home() {
     return (
-        <Suspense fallback={<div className='loading'>Loading ...</div>}>
+        <Suspense fallback={<div className='loading'>
+            <div className="ring"></div>
+            <span>loading...</span>
+        </div>}>
             <Scrolltotop />
             <Nav />
             <Story />
