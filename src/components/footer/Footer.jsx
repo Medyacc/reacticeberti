@@ -9,7 +9,6 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { useEffect, useState } from 'react';
 
 export default function Footer() {
-
     const [showFooterUp, setShowFooterUp] = useState(false);
     const [isManuallyOpened, setIsManuallyOpened] = useState(false);
 
@@ -19,12 +18,12 @@ export default function Footer() {
     };
 
     const handleScroll = () => {
-        if (isManuallyOpened) return;
-
         const scrollPosition = window.innerHeight + window.scrollY;
         const documentHeight = document.documentElement.scrollHeight;
 
-        if (scrollPosition >= documentHeight - 50) {
+        if (isManuallyOpened) {
+            setShowFooterUp(true);
+        } else if (scrollPosition >= documentHeight - 50) {
             setShowFooterUp(true);
         } else {
             setShowFooterUp(false);
