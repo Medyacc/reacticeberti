@@ -11,8 +11,7 @@
     },
     "story": {
         "title": "Our Story",
-        "description": "The IceBerti Story Started Over 45 Years Ago With Two Brothers And Just One Dream. Since Then, A Lot Has Changed, But Our Values And Commitment To Serving Great Tasting Coffee In Our DNA.",
-        "findoutmore": "Find out more"
+        "description": "Ice Berti was born from a childhood love of ice cream and a transformative journey through South Africa, where we discovered the power of sharing joy. Inspired by Mirleft's vibrant spirit, we chose it as our home to create moments of happiness. Each scoop of our ice cream embodies this commitment to quality and joy, inviting you to taste the difference."
     },
     "swipermenu": {
         "coffee": "Coffee",
@@ -22,12 +21,6 @@
         "iceCream": "IceCream",
         "hotDrinks": "HotDrinks",
         "colDrinks": "ColDrinks"
-    },
-    "ouriced": {
-        "description": "Our iced drinks feature the same great coffee, served over ice",
-        "title": "Our menu's full of the good stuff",
-        "paragraphe": "Whatever your diet or preferences, there's enough choice for everyone.",
-        "btn": "Find out more"
     },
     "menu": {
         "title": "Our Menu",
@@ -79,6 +72,8 @@
     "translateiceberti": "Come To Ice Berti Space.",
     "purewater": {
         "title": "Begins with pure water",
-        "description": "We use a 7 Stage Reserve Osmosis Filter Aqua 7 Pure to make our products"
+        "description": "At Ice Berti, we use only the freshest, highest-quality ingredients in our ice cream, iced coffee,and milkshakes to ensure each bite and sip is full of flavor. We are also dedicated to sustainability, using eco-friendly packaging and maintaining high water quality with our advanced filtration system.",
+        "readmore": " Read More",
+        "showless": " Show Less"
     }
 }

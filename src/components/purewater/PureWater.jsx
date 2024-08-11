@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import './purewater.css'
+import TruncateText from '../truncatetext/Truncatetext';
 
 export default function PureWater() {
 
@@ -11,7 +12,7 @@ export default function PureWater() {
                 <div className='purewaterCard'>
                     <div className='purewaterInfo'>
                         <h2>{t("purewater.title")}</h2>
-                        <p>{t("purewater.description")}</p>
+                        <TruncateText text={t("purewater.description")} maxLength={165} />
                     </div>
                     <div className='purewaterImg'>
                         <img src="./images/purewater.webp" alt="" />

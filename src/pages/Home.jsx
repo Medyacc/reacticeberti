@@ -20,9 +20,9 @@ export default function Home() {
             <Nav />
             <Story />
             <Swipermenu />
-            <Ouriceddrinks />
-            <Translateiceberti />
             <PureWater />
+            <Translateiceberti />
+            <Ouriceddrinks />
             <Footer />
         </Suspense>
     );

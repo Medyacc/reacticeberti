@@ -1,6 +1,6 @@
-import { useTranslation } from 'react-i18next';
 import './story.css'
-import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+import { useTranslation } from 'react-i18next'
+import TruncateText from '../truncatetext/Truncatetext'
 
 export default function Story() {
 
@@ -15,8 +15,7 @@ export default function Story() {
                     </div>
                     <div className='stroyInfo'>
                         <h1>{t("story.title")}</h1>
-                        <p>{t("story.description")}</p>
-                        <button>{t("story.findoutmore")} <ArrowRightIcon className='arrowRightIcon' /></button>
+                        <TruncateText text={t("story.description")} maxLength={165} />
                     </div>
                 </div>
             </div>
