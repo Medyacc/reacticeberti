@@ -110,6 +110,7 @@
 
     .purewaterInfo {
         width: 90%;
+        text-align: center;
     }
 
     .purewaterInfo h2 {
@@ -118,7 +119,6 @@
 
     .purewaterInfo p {
         font-size: 18px;
-        text-align: justify;
     }
 }
 
