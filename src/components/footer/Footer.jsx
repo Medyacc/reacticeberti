@@ -23,7 +23,7 @@ export default function Footer() {
 
         if (isManuallyOpened) {
             setShowFooterUp(true);
-        } else if (scrollPosition >= documentHeight - 50) {
+        } else if (scrollPosition >= documentHeight - 100) {
             setShowFooterUp(true);
         } else {
             setShowFooterUp(false);
