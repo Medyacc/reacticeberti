@@ -19,7 +19,16 @@ export default function Nav() {
         i18n.changeLanguage(lang);
         setSelectedLanguage(lang);
         setDropdownOpen(false);
+        localStorage.setItem('selectedLanguage', lang);
     };
+
+    useEffect(() => {
+        const savedLanguage = localStorage.getItem('selectedLanguage');
+        if (savedLanguage) {
+            i18n.changeLanguage(savedLanguage);
+            setSelectedLanguage(savedLanguage);
+        }
+    }, []);
 
     const toggleDropdown = () => {
         setDropdownOpen(!dropdownOpen);
