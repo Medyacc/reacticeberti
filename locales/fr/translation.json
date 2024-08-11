@@ -11,8 +11,7 @@
     },
     "story": {
         "title": "Notre histoire",
-        "description": "L'histoire d'IceBerti a commencé il y a plus de 45 ans avec deux frères et un seul rêve. Depuis, beaucoup de choses ont changé, mais nos valeurs et notre engagement à servir un café au goût excellent sont dans notre ADN.",
-        "findoutmore": "En savoir plus"
+        "description": "Ice Berti est né d'un amour d'enfance pour la crème glacée et d'un voyage transformateur à travers l'Afrique du Sud, où nous avons découvert le pouvoir de partager la joie. Inspirés par l'esprit vibrant de Mirleft, nous l'avons choisi comme notre maison pour créer des moments de bonheur. Chaque boule de notre crème glacée incarne cet engagement envers la qualité et la joie, vous invitant à goûter la différence."
     },
     "swipermenu": {
         "coffee": "Café",
@@ -22,12 +21,6 @@
         "iceCream": "CrèmeGlacée",
         "hotDrinks": "BoissonsChaudes",
         "colDrinks": "BoissonsFraîches"
-    },
-    "ouriced": {
-        "description": "Nos boissons glacées offrent le même excellent café, servi sur glace",
-        "title": "Notre menu regorge de bonnes choses",
-        "paragraphe": "Quel que soit votre régime ou vos préférences, il y a suffisamment de choix pour tout le monde.",
-        "btn": "En savoir plus"
     },
     "menu": {
         "title": "Notre menu",
@@ -79,6 +72,8 @@
     "translateiceberti": "Venez à l'espace Ice Berti.",
     "purewater": {
         "title": "Commence avec de l'eau pure",
-        "description": "Nous utilisons un filtre à osmose inverse en 7 étapes Aqua 7 Pure pour fabriquer nos produits"
+        "description": "Chez Ice Berti, nous utilisons uniquement les ingrédients les plus frais et de la plus haute qualité dans nos glaces, cafés glacés et milkshakes pour garantir que chaque bouchée et chaque gorgée est pleine de saveur. Nous sommes également engagés dans la durabilité, en utilisant des emballages écologiques et en maintenant une haute qualité de l'eau grâce à notre système de filtration avancé.",
+        "readmore": " Lire la suite",
+        "showless": " Voir moins"
     }
 }

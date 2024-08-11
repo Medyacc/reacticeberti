@@ -11,8 +11,7 @@
     },
     "story": {
         "title": "Unsere Geschichte",
-        "description": "Die Geschichte von IceBerti begann vor über 45 Jahren mit zwei Brüdern und nur einem Traum. Seitdem hat sich viel verändert, aber unsere Werte und unser Engagement, großartig schmeckenden Kaffee zu servieren, sind in unserer DNA.",
-        "findoutmore": "Mehr erfahren"
+        "description": "Ice Berti entstand aus einer kindlichen Liebe zu Eiscreme und einer transformativen Reise durch Südafrika, bei der wir die Kraft des Teilens von Freude entdeckten. Inspiriert vom lebendigen Geist Mirlefts haben wir es als unser Zuhause gewählt, um Momente des Glücks zu schaffen. Jede Kugel unseres Eises verkörpert dieses Engagement für Qualität und Freude und lädt Sie ein, den Unterschied zu schmecken."
     },
     "swipermenu": {
         "coffee": "Kaffee",
@@ -22,12 +21,6 @@
         "iceCream": "Eis",
         "hotDrinks": "Heißgetränke",
         "colDrinks": "Kaltgetränke"
-    },
-    "ouriced": {
-        "description": "Unsere Eiskaffees bieten den gleichen großartigen Kaffee, serviert auf Eis",
-        "title": "Unser Menü ist voller guter Dinge",
-        "paragraphe": "Egal welche Diät oder Vorlieben Sie haben, es gibt genug Auswahl für alle.",
-        "btn": "Mehr erfahren"
     },
     "menu": {
         "title": "Unser Menü",
@@ -79,6 +72,8 @@
     "translateiceberti": "Kommen Sie in den Ice Berti Raum.",
     "purewater": {
         "title": "Beginnt mit reinem Wasser",
-        "description": "Wir verwenden einen 7-stufigen Umkehrosmose-Filter Aqua 7 Pure, um unsere Produkte herzustellen"
+        "description": "Bei Ice Berti verwenden wir nur die frischesten und hochwertigsten Zutaten für unser Eis, unseren Eiskaffee und unsere Milchshakes, um sicherzustellen, dass jeder Bissen und jeder Schluck voller Geschmack ist. Wir setzen uns auch für Nachhaltigkeit ein, indem wir umweltfreundliche Verpackungen verwenden und dank unseres fortschrittlichen Filtersystems eine hohe Wasserqualität aufrechterhalten.",
+        "readmore": " Mehr erfahren",
+        "showless": " Weniger anzeigen"
     }
 }
