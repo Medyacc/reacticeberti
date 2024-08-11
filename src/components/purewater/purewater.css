@@ -1,7 +1,7 @@
 .purewater {
     background-color: var(--blackColor);
     padding-top: 50px;
-    padding-bottom: 90px;
+    padding-bottom: 200px;
 }
 
 .purewaterCard {
@@ -91,7 +91,7 @@
 
     .purewater {
         padding-top: 30px;
-        padding-bottom: 70px;
+        padding-bottom: 200px;
     }
 
     .purewaterCard {

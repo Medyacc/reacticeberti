@@ -6,15 +6,38 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Footer() {
 
     const [showFooterUp, setShowFooterUp] = useState(false);
+    const [isManuallyOpened, setIsManuallyOpened] = useState(false);
 
     const toggleFooterUp = () => {
         setShowFooterUp(!showFooterUp);
+        setIsManuallyOpened(!showFooterUp);
     };
+
+    const handleScroll = () => {
+        if (isManuallyOpened) return;
+
+        const scrollPosition = window.innerHeight + window.scrollY;
+        const documentHeight = document.documentElement.scrollHeight;
+
+        if (scrollPosition >= documentHeight - 50) {
+            setShowFooterUp(true);
+        } else {
+            setShowFooterUp(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [isManuallyOpened]);
 
     return (
         <div id="footer" className='footer'>
