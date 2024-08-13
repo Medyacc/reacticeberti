@@ -1,5 +1,6 @@
 import './productsmenu.css'
 import { useAutoAnimate } from '@formkit/auto-animate/react'
+import StarIcon from '@mui/icons-material/Star';
 
 export default function Productsmenu({ menuProducts, selectedCategory }) {
 
@@ -7,7 +8,7 @@ export default function Productsmenu({ menuProducts, selectedCategory }) {
     const [parent] = useAutoAnimate()
 
     const filteredProducts = menuProducts.filter(
-        product => product.name === selectedCategory
+        product => product.name === selectedCategory.name
     );
 
 
@@ -16,21 +17,20 @@ export default function Productsmenu({ menuProducts, selectedCategory }) {
     return (
         <div className='productsmenu'>
             <div className='boxMenu'>
+                <div className='container'>
+                    <div className="productMenu" ref={parent}>
+                        <img src={selectedCategory.bg} alt="" />
+                        <div className="productInfo">
 
-                <div className="productMenu" ref={parent}>
-                    {
-                        filteredProducts.map((product, i) => (
-                            <div key={i} className="cardProduct">
-                                <div className='imgProduct'>
-                                    <img src={product.img} alt="image" />
-                                </div>
-                                <div className="description">
-                                    <p>{product.detail}</p>
-                                    <p>{product.price}</p>
-                                </div>
-                            </div>
-                        ))
-                    }
+                            {
+                                filteredProducts.map((product, i) => (
+                                    <div key={i}>
+                                        <p><StarIcon className='starIcon' />{product.detail}</p>
+                                    </div>
+                                ))
+                            }
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

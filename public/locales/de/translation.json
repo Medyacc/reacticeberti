@@ -6,66 +6,150 @@
     },
     "navInfo": "Willkommen bei Ice Berti, wo jede Kugel eine Geschichte erzählt",
     "btnnavbar": {
-        "direction": "Route berechnen",
-        "contact": "Kontakt"
+        "direction": "Route berechnen"
     },
     "story": {
         "title": "Unsere Geschichte",
         "description": "Ice Berti entstand aus einer kindlichen Liebe zu Eiscreme und einer transformativen Reise durch Südafrika, bei der wir die Kraft des Teilens von Freude entdeckten. Inspiriert vom lebendigen Geist Mirlefts haben wir es als unser Zuhause gewählt, um Momente des Glücks zu schaffen. Jede Kugel unseres Eises verkörpert dieses Engagement für Qualität und Freude und lädt Sie ein, den Unterschied zu schmecken."
     },
     "swipermenu": {
-        "coffee": "Kaffee",
-        "milkshake": "Milchshake",
+        "hotDrinks": "Heißgetränke",
         "juices": "Säfte",
+        "milkshake": "Milchshake",
         "cocktails": "Cocktails",
         "iceCream": "Eis",
-        "hotDrinks": "Heißgetränke",
-        "colDrinks": "Kaltgetränke"
+        "colDrinks": "Kaltgetränke",
+        "smoothies": "Smoothies"
     },
     "menu": {
-        "title": "Unser Menü",
         "products": [
             {
-                "name": "coffee",
-                "detail": "Schwarzer Kaffee",
-                "price": "60 Mad",
-                "img": "./images/products/coffeeblack.webp"
-            },
-            {
-                "name": "colddrinks",
-                "detail": "Mineralwasser",
-                "price": "48 Mad",
-                "img": "./images/products/colddrinkswater.webp"
-            },
-            {
-                "name": "icecream",
-                "detail": "Erdbeer-Eisbecher",
-                "price": "69 Mad",
-                "img": "./images/products/icecreamchocolat.webp"
-            },
-            {
-                "name": "milkshake",
-                "detail": "Erdbeer-Milchshake",
-                "price": "120 Mad",
-                "img": "./images/products/milkshakfraise.webp"
-            },
-            {
-                "name": "cocktail",
-                "detail": "Mojito",
-                "price": "128 Mad",
-                "img": "./images/products/cocktailmojito.webp"
+                "name": "hotdrinks",
+                "detail": "Schwarzer Kaffee"
             },
             {
                 "name": "hotdrinks",
-                "detail": "Cappuccino",
-                "price": "68 Mad",
-                "img": "./images/products/hotdrinkscappuccino.webp"
+                "detail": "Americano Kaffee"
+            },
+            {
+                "name": "hotdrinks",
+                "detail": "Kaffee mit Milch"
+            },
+            {
+                "name": "hotdrinks",
+                "detail": "Kleiner Espresso"
+            },
+            {
+                "name": "hotdrinks",
+                "detail": "Großer Espresso"
+            },
+            {
+                "name": "hotdrinks",
+                "detail": "Kaffee Latte"
+            },
+            {
+                "name": "hotdrinks",
+                "detail": "Cappuccino"
+            },
+            {
+                "name": "hotdrinks",
+                "detail": "Heiße Schokolade"
+            },
+            {
+                "name": "colddrinks",
+                "detail": "Mineralwasser"
+            },
+            {
+                "name": "colddrinks",
+                "detail": "Cola"
+            },
+            {
+                "name": "colddrinks",
+                "detail": "Fanta"
+            },
+            {
+                "name": "colddrinks",
+                "detail": "Sprite"
+            },
+            {
+                "name": "milkshake",
+                "detail": "Zitronenbutter-Milchshake"
+            },
+            {
+                "name": "milkshake",
+                "detail": "Bananenmilchshake"
+            },
+            {
+                "name": "milkshake",
+                "detail": "Erdbeermilchshake"
+            },
+            {
+                "name": "milkshake",
+                "detail": "Eiskaffee-Traum"
+            },
+            {
+                "name": "smoothies",
+                "detail": "Karotten-Apfel-Smoothie mit Ingwer"
+            },
+            {
+                "name": "smoothies",
+                "detail": "Kiwi-Apfel-Smoothie mit Joghurt"
+            },
+            {
+                "name": "icecream",
+                "detail": "Schokoladen-Eiscreme-Sundae"
+            },
+            {
+                "name": "icecream",
+                "detail": "Nuss-Sundae"
+            },
+            {
+                "name": "icecream",
+                "detail": "Erdbeer-Eiscreme-Sundae"
+            },
+            {
+                "name": "icecream",
+                "detail": "Gemischtes Eis mit saisonalen Früchten"
+            },
+            {
+                "name": "cocktail",
+                "detail": "Ipanema"
+            },
+            {
+                "name": "cocktail",
+                "detail": "Virgin Sunrise"
+            },
+            {
+                "name": "cocktail",
+                "detail": "Mojito"
+            },
+            {
+                "name": "cocktail",
+                "detail": "Himbeer-Punsch"
+            },
+            {
+                "name": "cocktail",
+                "detail": "Kokosnusskuss"
             },
             {
                 "name": "juice",
-                "detail": "Apfelsaft",
-                "price": "55 Mad",
-                "img": "./images/products/juiceapple.webp"
+                "detail": "Apfelsaft"
+            },
+            {
+                "name": "juice",
+                "detail": "Orangensaft"
+            },
+            {
+                "name": "juice",
+                "detail": "Kirschsaft"
+            },
+            {
+                "name": "juice",
+                "detail": "Mangos Saft"
+            },
+            {
+                "name": "juice",
+                "detail": "Bananensaft"
             }
         ]
     },

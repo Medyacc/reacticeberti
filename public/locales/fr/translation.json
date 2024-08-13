@@ -6,66 +6,150 @@
     },
     "navInfo": "Bienvenue chez Ice Berti où chaque boule raconte une histoire",
     "btnnavbar": {
-        "direction": "Obtenir l'itinéraire",
-        "contact": "Contact"
+        "direction": "Obtenir l'itinéraire"
     },
     "story": {
         "title": "Notre histoire",
         "description": "Ice Berti est né d'un amour d'enfance pour la crème glacée et d'un voyage transformateur à travers l'Afrique du Sud, où nous avons découvert le pouvoir de partager la joie. Inspirés par l'esprit vibrant de Mirleft, nous l'avons choisi comme notre maison pour créer des moments de bonheur. Chaque boule de notre crème glacée incarne cet engagement envers la qualité et la joie, vous invitant à goûter la différence."
     },
     "swipermenu": {
-        "coffee": "Café",
-        "milkshake": "Milkshake",
+        "hotDrinks": "BoissonsChaudes",
         "juices": "Jus",
+        "milkshake": "Milkshake",
         "cocktails": "Cocktails",
         "iceCream": "CrèmeGlacée",
-        "hotDrinks": "BoissonsChaudes",
-        "colDrinks": "BoissonsFraîches"
+        "colDrinks": "BoissonsFraîches",
+        "smoothies": "Smoothies"
     },
     "menu": {
-        "title": "Notre menu",
         "products": [
             {
-                "name": "coffee",
-                "detail": "Café noir",
-                "price": "60 Mad",
-                "img": "./images/products/coffeeblack.webp"
-            },
-            {
-                "name": "colddrinks",
-                "detail": "Eau minérale",
-                "price": "48 Mad",
-                "img": "./images/products/colddrinkswater.webp"
-            },
-            {
-                "name": "icecream",
-                "detail": "Coupe glacée aux fraises",
-                "price": "69 Mad",
-                "img": "./images/products/icecreamchocolat.webp"
-            },
-            {
-                "name": "milkshake",
-                "detail": "Milkshake a la Fraise",
-                "price": "120 Mad",
-                "img": "./images/products/milkshakfraise.webp"
-            },
-            {
-                "name": "cocktail",
-                "detail": "Mojito",
-                "price": "128 Mad",
-                "img": "./images/products/cocktailmojito.webp"
+                "name": "hotdrinks",
+                "detail": "Café noir"
             },
             {
                 "name": "hotdrinks",
-                "detail": "Cappuccino",
-                "price": "68 Mad",
-                "img": "./images/products/hotdrinkscappuccino.webp"
+                "detail": "Café americano"
+            },
+            {
+                "name": "hotdrinks",
+                "detail": "Café au lait"
+            },
+            {
+                "name": "hotdrinks",
+                "detail": "Espresso petit"
+            },
+            {
+                "name": "hotdrinks",
+                "detail": "Espresso super"
+            },
+            {
+                "name": "hotdrinks",
+                "detail": "Café Latte"
+            },
+            {
+                "name": "hotdrinks",
+                "detail": "Cappuccino"
+            },
+            {
+                "name": "hotdrinks",
+                "detail": "Chocolat chaud a la créme"
+            },
+            {
+                "name": "colddrinks",
+                "detail": "Eau minérale"
+            },
+            {
+                "name": "colddrinks",
+                "detail": "Cola"
+            },
+            {
+                "name": "colddrinks",
+                "detail": "Fanta"
+            },
+            {
+                "name": "colddrinks",
+                "detail": "Sprite"
+            },
+            {
+                "name": "milkshake",
+                "detail": "Shake au barbeurre et au citron"
+            },
+            {
+                "name": "milkshake",
+                "detail": "Milkshake a la banane"
+            },
+            {
+                "name": "milkshake",
+                "detail": "Milkshake a la fraise"
+            },
+            {
+                "name": "milkshake",
+                "detail": "Rêve de café glacé"
+            },
+            {
+                "name": "smoothies",
+                "detail": "Smoothie aux carottes et pommes au gingembre"
+            },
+            {
+                "name": "smoothies",
+                "detail": "Smoothie pomme - kiwi - yaourt"
+            },
+            {
+                "name": "icecream",
+                "detail": "Coupe glacée au chocolat"
+            },
+            {
+                "name": "icecream",
+                "detail": "Coupe glacée aux noix"
+            },
+            {
+                "name": "icecream",
+                "detail": "Coupe glacée aux fraises"
+            },
+            {
+                "name": "icecream",
+                "detail": "Mélange de glaces aux fruits de saison"
+            },
+            {
+                "name": "cocktail",
+                "detail": "Ipanema"
+            },
+            {
+                "name": "cocktail",
+                "detail": "Virgin sunrise"
+            },
+            {
+                "name": "cocktail",
+                "detail": "Mojito"
+            },
+            {
+                "name": "cocktail",
+                "detail": "Raspberry Punsch"
+            },
+            {
+                "name": "cocktail",
+                "detail": "Coconuut kiss"
             },
             {
                 "name": "juice",
-                "detail": "Jus de pomme",
-                "price": "55 Mad",
-                "img": "./images/products/juiceapple.webp"
+                "detail": "Jus de pomme"
+            },
+            {
+                "name": "juice",
+                "detail": "Jus d'orange"
+            },
+            {
+                "name": "juice",
+                "detail": "Jus de cerise"
+            },
+            {
+                "name": "juice",
+                "detail": "Jus de mangue"
+            },
+            {
+                "name": "juice",
+                "detail": "Jus de banane"
             }
         ]
     },

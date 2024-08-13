@@ -7,58 +7,101 @@
 
 .productMenu {
     display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 70%;
+    margin-inline: auto;
+}
+
+.productMenu img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.productInfo {
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
 }
 
-.cardProduct {
+.productInfo p {
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 300px;
-    height: 250px;
+    padding: 10px;
+    color: black;
+    font-weight: 900;
+    border-radius: 7px;
+    font-size: 18px;
     overflow: hidden;
-    border-radius: 10px;
     position: relative;
 }
 
-.cardProduct .imgProduct {
-    width: 100%;
-    height: 100%;
-    transition: 0.3s;
-}
-
-.cardProduct .imgProduct img {
-    width: 100%;
-    height: 100%;
-    border-radius: 0;
-    border: none;
-}
-
-.cardProduct .imgProduct:hover {
-    transform: scale(1.05) rotate(1deg);
-}
-
-.cardProduct .description {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.productInfo p::before {
+    content: "";
     position: absolute;
-    bottom: 0;
-    left: 0;
+    top: 0;
+    left: -100%;
     width: 100%;
-    font-weight: 700;
-    padding: 10px;
-    color: white;
-    font-weight: 900;
-    background-color: rgba(0, 0, 0, 0.719);
+    height: 100%;
+    background-color: rgba(255, 115, 0, 0.233);
+    transition: 0.5s;
 }
 
-.cardProduct .description p:last-child {
-    color: var(--primaryColor);
-    font-size: 16px;
+.productInfo p:hover::before {
+    left: 100%;
+}
+
+.productInfo .starIcon {
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+@media (max-width:996px) {
+
+    .productMenu {
+        width: 80%;
+    }
+
+    .productInfo p {
+        font-size: 16px;
+    }
+
+    .productInfo .starIcon {
+        font-size: 13px;
+        margin-right: 3px;
+    }
+}
+
+@media (max-width:768px) {
+
+    .productMenu {
+        width: 90%;
+    }
+
+    .productInfo {
+        gap: 20px;
+    }
+
+    .productInfo p {
+        font-size: 14px;
+    }
+
+    .productInfo .starIcon {
+        font-size: 11px;
+        margin-right: 3px;
+    }
+}
+
+@media (max-width:400px) {
+
+
+    .productInfo p {
+        font-size: 12px;
+    }
+
+    .productInfo .starIcon {
+        font-size: 9px;
+        margin-right: 3px;
+    }
 }
