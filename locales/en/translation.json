@@ -6,66 +6,150 @@
     },
     "navInfo": "Welcome to Ice Berti Where Every Scoop Tells a Story",
     "btnnavbar": {
-        "direction": "Get Direction",
-        "contact": "Contact"
+        "direction": "Get Direction"
     },
     "story": {
         "title": "Our Story",
         "description": "Ice Berti was born from a childhood love of ice cream and a transformative journey through South Africa, where we discovered the power of sharing joy. Inspired by Mirleft's vibrant spirit, we chose it as our home to create moments of happiness. Each scoop of our ice cream embodies this commitment to quality and joy, inviting you to taste the difference."
     },
     "swipermenu": {
-        "coffee": "Coffee",
-        "milkshake": "Milkshake",
+        "hotDrinks": "HotDrinks",
         "juices": "Juices",
+        "milkshake": "Milkshake",
         "cocktails": "Cocktails",
         "iceCream": "IceCream",
-        "hotDrinks": "HotDrinks",
-        "colDrinks": "ColDrinks"
+        "colDrinks": "ColDrinks",
+        "smoothies": "Smoothies"
     },
     "menu": {
-        "title": "Our Menu",
         "products": [
             {
-                "name": "coffee",
-                "detail": "Black Coffee",
-                "price": "60 Mad",
-                "img": "./images/products/coffeeblack.webp"
-            },
-            {
-                "name": "colddrinks",
-                "detail": "Mineral Water",
-                "price": "48 Mad",
-                "img": "./images/products/colddrinkswater.webp"
-            },
-            {
-                "name": "icecream",
-                "detail": "Chocolate ice cream",
-                "price": "69 Mad",
-                "img": "./images/products/icecreamchocolat.webp"
-            },
-            {
-                "name": "milkshake",
-                "detail": "Strawberry milkshake",
-                "price": "120 Mad",
-                "img": "./images/products/milkshakfraise.webp"
-            },
-            {
-                "name": "cocktail",
-                "detail": "Mojito",
-                "price": "128 Mad",
-                "img": "./images/products/cocktailmojito.webp"
+                "name": "hotdrinks",
+                "detail": "Black Coffe"
             },
             {
                 "name": "hotdrinks",
-                "detail": "Cappuccino",
-                "price": "68 Mad",
-                "img": "./images/products/hotdrinkscappuccino.webp"
+                "detail": "Americano Coffe"
+            },
+            {
+                "name": "hotdrinks",
+                "detail": "Coffe With Milk"
+            },
+            {
+                "name": "hotdrinks",
+                "detail": "Espresso Small"
+            },
+            {
+                "name": "hotdrinks",
+                "detail": "Espresso Big"
+            },
+            {
+                "name": "hotdrinks",
+                "detail": "Coffe Latte"
+            },
+            {
+                "name": "hotdrinks",
+                "detail": "Cappuccino"
+            },
+            {
+                "name": "hotdrinks",
+                "detail": "Hot Chocolate"
+            },
+            {
+                "name": "colddrinks",
+                "detail": "Mineral Water"
+            },
+            {
+                "name": "colddrinks",
+                "detail": "Cola"
+            },
+            {
+                "name": "colddrinks",
+                "detail": "Fanta"
+            },
+            {
+                "name": "colddrinks",
+                "detail": "Sprite"
+            },
+            {
+                "name": "milkshake",
+                "detail": "Lemon butter milkshake"
+            },
+            {
+                "name": "milkshake",
+                "detail": "Banana milkshake"
+            },
+            {
+                "name": "milkshake",
+                "detail": "Strawberry milkshake"
+            },
+            {
+                "name": "milkshake",
+                "detail": "Iced coffe dream"
+            },
+            {
+                "name": "smoothies",
+                "detail": "Carrot apple smoothie with ginger"
+            },
+            {
+                "name": "smoothies",
+                "detail": "Kiwi apple smoothie with yoghurt"
+            },
+            {
+                "name": "icecream",
+                "detail": "Chocolate ice cream sundae"
+            },
+            {
+                "name": "icecream",
+                "detail": "Nut sundae"
+            },
+            {
+                "name": "icecream",
+                "detail": "Strawberry ice cream sundae"
+            },
+            {
+                "name": "icecream",
+                "detail": "Mixed ice cream with seasonal fruits"
+            },
+            {
+                "name": "cocktail",
+                "detail": "Ipanema"
+            },
+            {
+                "name": "cocktail",
+                "detail": "Virgin sunrise"
+            },
+            {
+                "name": "cocktail",
+                "detail": "Mojito"
+            },
+            {
+                "name": "cocktail",
+                "detail": "Raspberry Punsch"
+            },
+            {
+                "name": "cocktail",
+                "detail": "Coconuut kiss"
             },
             {
                 "name": "juice",
-                "detail": "Apple Juice",
-                "price": "55 Mad",
-                "img": "./images/products/juiceapple.webp"
+                "detail": "Apple Juice"
+            },
+            {
+                "name": "juice",
+                "detail": "Orange Juice"
+            },
+            {
+                "name": "juice",
+                "detail": "Cherry Juice"
+            },
+            {
+                "name": "juice",
+                "detail": "Mango Juice"
+            },
+            {
+                "name": "juice",
+                "detail": "Banana Juice"
             }
         ]
     },
