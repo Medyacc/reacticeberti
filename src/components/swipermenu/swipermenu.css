@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
 .menu {
-    background-color: var(--blackColor);
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
 .swiperMenu {
+    background-color: var(--blackColor);
     width: 100%;
     position: relative;
 }

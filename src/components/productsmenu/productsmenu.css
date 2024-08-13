@@ -1,7 +1,10 @@
 .productsmenu {
-    margin-top: 20px;
+    background: url('/images/pattern.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
     border-top: 2px solid rgba(255, 255, 255, 0.384);
-    padding-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
 
@@ -23,14 +26,15 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
 }
 
 .productInfo p {
-    background-color: white;
     padding: 10px;
-    color: black;
+    background-color: white;
+    color: var(--blackColor);
     font-weight: 900;
+    border: 1px solid rgba(0, 0, 0, 0.178);
     border-radius: 7px;
     font-size: 18px;
     overflow: hidden;
@@ -77,10 +81,6 @@
 
     .productMenu {
         width: 90%;
-    }
-
-    .productInfo {
-        gap: 20px;
     }
 
     .productInfo p {

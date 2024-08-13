@@ -2,7 +2,7 @@ import './home.css'
 import React, { Suspense } from 'react';
 const Footer = React.lazy(() => import('../components/footer/Footer'));
 const Nav = React.lazy(() => import('../components/navbar/Nav'));
-const Ouriceddrinks = React.lazy(() => import('../components/ouriceddrinks/Ouriceddrinks'));
+const Contact = React.lazy(() => import('../components/contact/Contact'));
 const PureWater = React.lazy(() => import('../components/purewater/PureWater'));
 const Scrolltotop = React.lazy(() => import('../components/scrolltotop/Scrolltotop'));
 const Story = React.lazy(() => import('../components/story/Story'));
@@ -22,7 +22,7 @@ export default function Home() {
             <Swipermenu />
             <PureWater />
             <Translateiceberti />
-            <Ouriceddrinks />
+            <Contact />
             <Footer />
         </Suspense>
     );

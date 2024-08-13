@@ -1,12 +1,12 @@
 import { useTranslation } from 'react-i18next';
-import './ouriceddrinks.css'
+import './contact.css'
 
-export default function Ouriceddrinks() {
+export default function Contact() {
 
     const { t } = useTranslation();
 
     return (
-        <div className='ouriceddrinks'>
+        <div className='contact'>
         </div>
     )
 }
