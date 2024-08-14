@@ -40,32 +40,34 @@ export default function Footer() {
 
     return (
         <div id="footer" className='footer'>
-            <div className={`container ${showFooterUp ? 'show' : 'hide'}`}>
+            <div className={`${showFooterUp ? 'show' : 'hide'}`}>
                 <div className='footerup'>
-                    <div className="footerleft">
-                        <div className="footersocial">
-                            <img src="./images/logo.webp" alt="" />
-                            <div className='socialicons'>
-                                <a href='https://www.facebook.com/IceBertiMirleft' target='_blank'><FacebookIcon /></a>
-                                <a href='https://www.instagram.com/icebertimirleft/' target='_blank'><InstagramIcon /></a>
+                    <div className='container'>
+                        <div className="footerleft">
+                            <div className="footersocial">
+                                <img src="./images/logo.webp" alt="" />
+                                <div className='socialicons'>
+                                    <a href='https://www.facebook.com/IceBertiMirleft' target='_blank'><FacebookIcon /></a>
+                                    <a href='https://www.instagram.com/icebertimirleft/' target='_blank'><InstagramIcon /></a>
+                                </div>
+                            </div>
+                            <div className="footerplace">
+                                <p><RoomIcon className='footerplaceIcon' /> AV MOHAMED 5 EL YOUSSOFIA Tiznit</p>
+                                <p><MailOutlineIcon className='footerplaceIcon' /> info@icebertimirlet.com</p>
                             </div>
                         </div>
-                        <div className="footerplace">
-                            <p><RoomIcon className='footerplaceIcon' /> AV MOHAMED 5 EL YOUSSOFIA Tiznit</p>
-                            <p><MailOutlineIcon className='footerplaceIcon' /> info@icebertimirlet.com</p>
+                        <div className="footerright">
+                            <div className='footerprivacy'>
+                                <a><KeyboardArrowRightIcon /><span>Privacy Policy</span></a>
+                                <a><KeyboardArrowRightIcon /><span>Cookie Policy</span></a>
+                                <a><KeyboardArrowRightIcon /><span>Terms and Conditions</span></a>
+                            </div>
+                            <div className='footerfaq'>
+                                <a>FAQs</a>
+                                <a>Contact Us</a>
+                            </div>
+                            <KeyboardArrowDownIcon className={`arrowdownfooter ${showFooterUp ? 'show' : 'hide'}`} onClick={toggleFooterUp} />
                         </div>
-                    </div>
-                    <div className="footerright">
-                        <div className='footerprivacy'>
-                            <a><KeyboardArrowRightIcon /><span>Privacy Policy</span></a>
-                            <a><KeyboardArrowRightIcon /><span>Cookie Policy</span></a>
-                            <a><KeyboardArrowRightIcon /><span>Terms and Conditions</span></a>
-                        </div>
-                        <div className='footerfaq'>
-                            <a>FAQs</a>
-                            <a>Contact Us</a>
-                        </div>
-                        <KeyboardArrowDownIcon className={`arrowdownfooter ${showFooterUp ? 'show' : 'hide'}`} onClick={toggleFooterUp} />
                     </div>
                 </div>
             </div>
@@ -77,7 +79,6 @@ export default function Footer() {
                         <a href='https://www.instagram.com/icebertimirleft/' target='_blank'><InstagramIcon /></a>
                         <p className={`${showFooterUp ? 'hide' : 'show'}`}>Find out more about IceBerti</p>
                         <KeyboardArrowUpIcon className={`arrowupfooter ${showFooterUp ? 'hide' : 'show'}`} onClick={toggleFooterUp} />
-
                     </div>
                 </div>
             </div>
