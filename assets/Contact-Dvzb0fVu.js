@@ -1,0 +1,1 @@
+import{u as a,j as s}from"./index-CqLxAWfW.js";function c(){return a(),s.jsxs("div",{className:"contact",children:[s.jsx("div",{className:"address"}),s.jsx("div",{className:"contact"}),s.jsx("div",{className:"hours"})]})}export{c as default};
