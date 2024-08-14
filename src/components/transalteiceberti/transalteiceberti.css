@@ -32,7 +32,7 @@
     -webkit-text-stroke: 1px white;
     background: linear-gradient(to top, white 50%, white 50%);
     background-clip: text;
-    font-size: 50px;
+    font-size: 40px;
     letter-spacing: 5px;
 }
 
@@ -45,7 +45,7 @@
     }
 
     .translateiceberti p {
-        font-size: 40px;
+        font-size: 30px;
     }
 
 }
@@ -53,7 +53,7 @@
 @media (max-width:768px) {
 
     .translateiceberti p {
-        font-size: 25px;
+        font-size: 20px;
     }
 
 }
