@@ -7,6 +7,9 @@ export default function Contact() {
 
     return (
         <div className='contact'>
+            <div className="address"></div>
+            <div className="contact"></div>
+            <div className="hours"></div>
         </div>
     )
 }
