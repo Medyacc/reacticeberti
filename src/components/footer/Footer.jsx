@@ -10,16 +10,20 @@ import { useEffect, useState } from 'react';
 
 export default function Footer() {
     const [showFooterUp, setShowFooterUp] = useState(false);
+    const [isManuallyOpened, setIsManuallyOpened] = useState(false);
 
     const toggleFooterUp = () => {
         setShowFooterUp(!showFooterUp);
+        setIsManuallyOpened(!showFooterUp);
     };
 
     const handleScroll = () => {
-        const scrollPosition = window.innerHeight + window.scrollY;
-        const documentHeight = document.body.offsetHeight;
+        if (isManuallyOpened) return;
 
-        if (scrollPosition >= documentHeight) {
+        const scrollPosition = window.innerHeight + window.scrollY;
+        const documentHeight = document.documentElement.scrollHeight;
+
+        if (scrollPosition >= documentHeight - 50) {
             setShowFooterUp(true);
         } else {
             setShowFooterUp(false);
@@ -32,7 +36,7 @@ export default function Footer() {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    }, [isManuallyOpened]);
 
     return (
         <div id="footer" className='footer'>
