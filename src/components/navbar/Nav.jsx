@@ -133,7 +133,7 @@ export default function Nav() {
                     <a href="#visitus"><RoomIcon className='navCenterBtnIcon' />{t("btnnavbar.direction")}</a>
                 </div>
             </div>
-            <a href='#story'><img className='scrollicon' src="./images/scroll.svg" alt="" /></a>
+            <a href='#story'><img className='scrollicon' src="./images/scroll.webp" alt="" /></a>
         </div>
     )
 }
