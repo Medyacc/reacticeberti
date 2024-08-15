@@ -1,0 +1,1 @@
+import{r as c,u,j as a}from"./index-DAOOUXA3.js";function p({text:s,maxLength:e}){const[t,n]=c.useState(!1),o=s.length>e?s.substring(0,e)+"...":s,{t:r}=u();return a.jsxs("p",{className:"truncatedtext",children:[t?s:o,s.length>e&&a.jsx("span",{className:"toggle-text",onClick:()=>n(!t),children:r(t?"purewater.showless":"purewater.readmore")})]})}export{p as T};
