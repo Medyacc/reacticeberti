@@ -15,6 +15,7 @@
     "@formkit/auto-animate": "^0.8.2",
     "@mui/icons-material": "^5.16.5",
     "@mui/material": "^5.16.5",
+    "emailjs-com": "^3.2.0",
     "i18next": "^23.12.2",
     "i18next-browser-languagedetector": "^8.0.0",
     "i18next-http-backend": "^2.5.2",

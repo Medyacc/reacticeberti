@@ -66,7 +66,7 @@ export default function Footer() {
                             <Link to="/reacticeberti/faqs"><KeyboardArrowRightIcon /><span>FAQs</span></Link>
                         </div>
                         <div className='footercontactus'>
-                            <a>Contact Us</a>
+                            <Link to="/reacticeberti/contactus">Contact Us</Link>
                         </div>
                         <KeyboardArrowDownIcon className={`arrowdownfooter ${showFooterUp ? 'show' : 'hide'}`} onClick={toggleFooterUp} />
                     </div>

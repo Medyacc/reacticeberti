@@ -8,6 +8,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Privacy from './pages/privacy/Privacy';
 import Terms from './pages/terms/Terms';
 import Faqs from './pages/faqs/Faqs';
+import Contactus from './pages/contact/Contactus';
 
 i18n
   .use(initReactI18next)
@@ -34,6 +35,7 @@ export default function App() {
         <Route path="/reacticeberti/privacy" element={<Privacy />} />
         <Route path="/reacticeberti/terms" element={<Terms />} />
         <Route path="/reacticeberti/faqs" element={<Faqs />} />
+        <Route path="/reacticeberti/contactus" element={<Contactus />} />
       </Routes>
     </BrowserRouter>
   )

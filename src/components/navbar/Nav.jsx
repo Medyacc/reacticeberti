@@ -107,6 +107,7 @@ export default function Nav() {
                             <a href='#menu' onClick={() => setMobileMenu(false)}><li>{t("navbar.menu")}</li></a>
                             <a href='#visitus' onClick={() => setMobileMenu(false)}><li>{t("navbar.visitus")}</li></a>
                             <a href='#story' onClick={() => setMobileMenu(false)}><li>{t("navbar.story")}</li></a>
+                            <Link to="/reacticeberti/contactus" onClick={() => setMobileMenu(false)}><li>{t("navbar.contactus")}</li></Link>
                         </ul>
                     </div>
                     <div className='navRight'>
