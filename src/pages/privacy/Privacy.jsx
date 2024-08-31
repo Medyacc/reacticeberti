@@ -82,7 +82,7 @@ export default function Privacy() {
                     <h3>10. Contact Us</h3>
                     <p> If you have any questions about this Privacy Policy, please contact us at:</p>
                     <ul className='privacy-contact'>
-                        <li><a href='mailto:"info@icebertimirlet.com"'>info@icebertimirlet.com</a></li>
+                        <li><a href='mailto:"info@icebertimirleft.com"'>info@icebertimirleft.com</a></li>
                     </ul>
                 </div>
             </div>

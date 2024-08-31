@@ -56,7 +56,7 @@ export default function Footer() {
                         </div>
                         <div className="footerplace">
                             <p><RoomIcon className='footerplaceIcon' /> Opposite the Post Office, Center Mirleft, Morocco, 85352</p>
-                            <a href='mailto:info@icebertimirlet.com'><MailOutlineIcon className='footerplaceIcon' /> info@icebertimirlet.com</a>
+                            <a href='mailto:info@icebertimirleft.com'><MailOutlineIcon className='footerplaceIcon' /> info@icebertimirleft.com</a>
                         </div>
                     </div>
                     <div className="footerright">

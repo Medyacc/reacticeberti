@@ -81,7 +81,7 @@ export default function Terms() {
                     <h2>8. Contact Us</h2>
                     <p>If you have any questions about these Terms of Use, please contact us at:</p>
                     <ul className='privacy-contact'>
-                        <li><a href='mailto:"info@icebertimirlet.com"'>info@icebertimirlet.com</a></li>
+                        <li><a href='mailto:"info@icebertimirleft.com"'>info@icebertimirleft.com</a></li>
                     </ul>
                 </div>
             </div>
