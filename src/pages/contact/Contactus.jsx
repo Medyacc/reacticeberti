@@ -34,6 +34,12 @@ export default function Contactus() {
             console.error('Error:', error);
             alert('Failed to send the message');
         });
+
+        setFormData({
+            name: '',
+            email: '',
+            message: ''
+        });
     };
 
     const { t } = useTranslation();
