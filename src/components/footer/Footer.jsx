@@ -7,10 +7,13 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
     const [showFooterUp, setShowFooterUp] = useState(false);
     const [isManuallyOpened, setIsManuallyOpened] = useState(false);
+    const date = new Date()
+    const dateyear = date.getFullYear()
 
     const toggleFooterUp = () => {
         setShowFooterUp(!showFooterUp);
@@ -38,6 +41,7 @@ export default function Footer() {
         };
     }, [isManuallyOpened]);
 
+
     return (
         <div id="footer" className='footer'>
             <div className={`container ${showFooterUp ? 'show' : 'hide'}`}>
@@ -51,18 +55,17 @@ export default function Footer() {
                             </div>
                         </div>
                         <div className="footerplace">
-                            <p><RoomIcon className='footerplaceIcon' /> AV MOHAMED 5 EL YOUSSOFIA Tiznit</p>
-                            <p><MailOutlineIcon className='footerplaceIcon' /> info@icebertimirlet.com</p>
+                            <p><RoomIcon className='footerplaceIcon' /> Opposite the Post Office, Center Mirleft, Morocco, 85352</p>
+                            <a href='mailto:info@icebertimirlet.com'><MailOutlineIcon className='footerplaceIcon' /> info@icebertimirlet.com</a>
                         </div>
                     </div>
                     <div className="footerright">
                         <div className='footerprivacy'>
-                            <a><KeyboardArrowRightIcon /><span>Privacy Policy</span></a>
-                            <a><KeyboardArrowRightIcon /><span>Cookie Policy</span></a>
-                            <a><KeyboardArrowRightIcon /><span>Terms and Conditions</span></a>
+                            <Link to="/reacticeberti/privacy"><KeyboardArrowRightIcon /><span>Privacy Policy</span></Link>
+                            <Link to="/reacticeberti/terms"><KeyboardArrowRightIcon /><span>Terms and Conditions</span></Link>
+                            <Link to="/reacticeberti/faqs"><KeyboardArrowRightIcon /><span>FAQs</span></Link>
                         </div>
-                        <div className='footerfaq'>
-                            <a>FAQs</a>
+                        <div className='footercontactus'>
                             <a>Contact Us</a>
                         </div>
                         <KeyboardArrowDownIcon className={`arrowdownfooter ${showFooterUp ? 'show' : 'hide'}`} onClick={toggleFooterUp} />
@@ -71,7 +74,7 @@ export default function Footer() {
             </div>
             <div className='copyright'>
                 <div className='container'>
-                    <p>Copyright  &#169; ice Berti Mirleft. All rights reserved</p>
+                    <p>Copyright  &#169; {dateyear} All Rights Reserved by <span><a href="https://icebertimirleft.com" target="_blank">Ice Berti Mirleft</a> | Designe by <a href="https://raqamify.com" target="_blank">Raqamify</a></span></p>
                     <div className='socialicons'>
                         <a href='https://www.facebook.com/IceBertiMirleft' target='_blank'><FacebookIcon /></a>
                         <a href='https://www.instagram.com/icebertimirleft/' target='_blank'><InstagramIcon /></a>

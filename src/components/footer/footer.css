@@ -5,6 +5,7 @@
     width: 100%;
     bottom: 0;
     z-index: 900;
+    box-shadow: 1px 0 5px rgba(255, 255, 255, 0.466);
 }
 
 .footer .footerup {
@@ -57,7 +58,8 @@
     top: 2px;
 }
 
-.footerleft .footerplace p {
+.footerleft .footerplace p,
+.footerleft .footerplace a {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
@@ -90,15 +92,12 @@
     font-size: 15px
 }
 
-.footerright .footerfaq {
+.footerright .footercontactus {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    margin-top: -20px;
     font-size: 15px;
-    margin-right: 60px;
-}
-
-.footerright .footerfaq a {
-    margin-bottom: 10px;
+    margin-right: 80px;
 }
 
 .copyright {
@@ -147,6 +146,16 @@
     top: 80px;
 }
 
+@media (max-width:1200px) {
+    .copyright .container {
+        width: 90%;
+    }
+
+    .copyright {
+        font-size: 15px
+    }
+}
+
 @media (max-width:996px) {
 
     .footer .footerup {
@@ -167,7 +176,8 @@
         font-size: 20px !important;
     }
 
-    .footerleft .footerplace p {
+    .footerleft .footerplace p,
+    .footerleft .footerplace a {
         font-size: 13px;
     }
 
@@ -183,13 +193,14 @@
         font-size: 14px
     }
 
-    .footerright .footerfaq {
+    .footerright .footercontactus {
         font-size: 14px;
-        margin-top: 5px;
+        margin-top: -5px;
     }
 
-    .copyright {
-        font-size: 16px
+
+    .copyright .socialicons p {
+        display: none;
     }
 
 }
@@ -229,10 +240,6 @@
         margin-top: 0
     }
 
-    .copyright {
-        font-size: 13px;
-    }
-
     .footer .arrowupfooter,
     .footer .arrowdownfooter {
         font-size: 25px;
@@ -244,13 +251,14 @@
     }
 
     .footer .arrowdownfooter {
-        top: 50%
+        top: 70%
     }
-}
 
-@media (max-width:600px) {
-    .copyright .socialicons p {
-        display: none;
+    .copyright p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 7px;
     }
 }
 
@@ -262,7 +270,8 @@
         gap: 20px;
     }
 
-    .footerleft .footerplace p {
+    .footerleft .footerplace p,
+    .footerleft .footerplace a {
         font-size: 12px;
     }
 
@@ -278,7 +287,7 @@
         font-size: 12px
     }
 
-    .footerright .footerfaq {
+    .footerright .footercontactus {
         font-size: 12px;
     }
 
@@ -287,7 +296,11 @@
         font-size: 16px !important;
     }
 
+    .copyright .container {
+        width: 100%;
+    }
+
     .copyright {
-        font-size: 10px;
+        font-size: 11px;
     }
 }

@@ -1,0 +1,12 @@
+.terms {
+    background: url('/images/pattern.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 130px;
+    padding-bottom: 150px;
+    height: 100vh;
+}
+
+.title-h3 {
+    color: rgb(85, 85, 85);
+}

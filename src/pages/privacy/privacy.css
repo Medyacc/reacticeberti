@@ -1,0 +1,66 @@
+.privacy {
+    background: url('/images/pattern.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 130px;
+    padding-bottom: 150px;
+    height: 100vh;
+}
+
+.privacy-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px 30px 200px;
+    line-height: 30px;
+}
+
+.information-collect {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.use-information li,
+.information-collect li,
+.privacy-contact li {
+    margin-left: 50px;
+    list-style: disc;
+}
+
+.privacy-contact li a {
+    color: blue;
+    font-weight: 800;
+}
+
+
+@media (max-width:600px) {
+    .privacy-info h1 {
+        font-size: 25px;
+    }
+
+    .privacy-info h2 {
+        font-size: 20px;
+    }
+
+    .privacy-info h3 {
+        font-size: 18px;
+    }
+
+
+    .privacy-info p {
+        font-size: 14px;
+    }
+
+    .privacy-info li {
+        font-size: 14px;
+    }
+
+    .use-information li,
+    .information-collect li,
+    .privacy-contact li {
+        margin-left: 30px;
+    }
+}

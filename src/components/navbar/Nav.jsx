@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import RoomIcon from '@mui/icons-material/Room';
+import { Link, useLocation } from 'react-router-dom';
 
 
 export default function Nav() {
@@ -13,6 +14,7 @@ export default function Nav() {
     const [scrolled, setScrolled] = useState(false);
     const [selectedLanguage, setSelectedLanguage] = useState('en');
     const [dropdownOpen, setDropdownOpen] = useState(false);
+    const location = useLocation();
 
 
     const handleLanguageChange = (lang) => {
@@ -87,7 +89,7 @@ export default function Nav() {
     };
 
     return (
-        <div className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+        <div className={`navbar ${scrolled ? 'scrolled' : ''} ${location.pathname === '/reacticeberti/' ? 'home-page' : 'other-page'}`}>
             <div className='navMenu'>
                 <div className='container'>
                     {
@@ -95,10 +97,12 @@ export default function Nav() {
                             <MenuIcon className='burgerMenu' onClick={() => setMobileMenu(true)} />
                     }
                     <div className='navLeft'>
-                        <div className={`logo ${scrolled ? 'hide-logo' : ''}`}>
-                            <img className={` ${scrolled ? 'showlogo2' : 'hidelogo2'}`} src="./images/logo2.webp" alt="" />
-                            <img src="./images/logo.webp" alt="" />
-                        </div>
+                        <Link to="/reacticeberti/">
+                            <div className={`logo ${scrolled ? 'hide-logo' : ''}`}>
+                                <img className={` ${scrolled ? 'showlogo2' : 'hidelogo2'}`} src="./images/logo2.webp" alt="" />
+                                <img src="./images/logo.webp" alt="" />
+                            </div>
+                        </Link>
                         <ul className={`navLinks ${mobileMenu && "navlinksMobile"}`}>
                             <a href='#menu' onClick={() => setMobileMenu(false)}><li>{t("navbar.menu")}</li></a>
                             <a href='#visitus' onClick={() => setMobileMenu(false)}><li>{t("navbar.visitus")}</li></a>
@@ -127,12 +131,14 @@ export default function Nav() {
                     </div>
                 </div>
             </div>
-            <div className='navCenter'>
-                <h2>{t("navInfo")}</h2>
-                <div className='navCenterBtn'>
-                    <a href="#visitus"><RoomIcon className='navCenterBtnIcon' />{t("btnnavbar.direction")}</a>
+            {location.pathname === '/reacticeberti/' && (
+                <div className='navCenter'>
+                    <h2>{t("navInfo")}</h2>
+                    <div className='navCenterBtn'>
+                        <a href="#visitus"><RoomIcon className='navCenterBtnIcon' />{t("btnnavbar.direction")}</a>
+                    </div>
                 </div>
-            </div>
+            )}
             <a href='#story'><img className='scrollicon' src="./images/scroll.webp" alt="" /></a>
         </div>
     )

@@ -1,13 +1,21 @@
 .navbar {
+    width: 100%;
+    color: #fff;
+    position: relative;
+}
+
+.navbar.home-page {
     background: url('/images/background.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     height: calc(100vh - 45px);
-    width: 100%;
-    color: #fff;
-    position: relative;
+}
+
+.navbar.other-page {
+    background: none;
+    height: auto;
 }
 
 .navMenu {

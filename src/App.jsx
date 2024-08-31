@@ -3,7 +3,11 @@ import i18n from "i18next";
 import Languagedetector from "i18next-browser-languagedetector";
 import { useTranslation, initReactI18next } from "react-i18next";
 import HttpApi from 'i18next-http-backend';
-import Home from "./pages/Home";
+import Home from "./pages/home/Home";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Privacy from './pages/privacy/Privacy';
+import Terms from './pages/terms/Terms';
+import Faqs from './pages/faqs/Faqs';
 
 i18n
   .use(initReactI18next)
@@ -24,8 +28,13 @@ export default function App() {
   const { t } = useTranslation();
 
   return (
-    <>
-      <Home />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/reacticeberti/" element={<Home />} />
+        <Route path="/reacticeberti/privacy" element={<Privacy />} />
+        <Route path="/reacticeberti/terms" element={<Terms />} />
+        <Route path="/reacticeberti/faqs" element={<Faqs />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
