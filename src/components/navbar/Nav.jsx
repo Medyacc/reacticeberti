@@ -70,13 +70,13 @@ export default function Nav() {
                 navCenter.style.opacity = 1;
                 navCenter.style.top = '50%';
             }
-        }, 100);
+        }, 400);
         setTimeout(() => {
             if (scroolicon) {
                 scroolicon.style.opacity = 1;
                 scroolicon.style.bottom = 0;
             }
-        }, 400);
+        }, 700);
     }, []);
 
 
