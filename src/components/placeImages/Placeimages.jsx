@@ -1,8 +1,6 @@
 import './placeimages.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
 
 import img1 from '/images/place/img1.webp'
 import img2 from '/images/place/img2.webp'
@@ -26,18 +24,11 @@ export default function Placeimages() {
         <div className='place-images'>
             <div className='container'>
                 <Swiper
-                    effect={'coverflow'}
                     grabCursor={true}
                     centeredSlides={true}
+                    slidesPerGroup={1}
                     slidesPerView={3}
                     loop={true}
-                    coverflowEffect={{
-                        rotate: 50,
-                        stretch: 0,
-                        depth: 100,
-                        modifier: 1,
-                        slideShadows: true,
-                    }}
                     className='place_container'
                 >
                     {imagesSlider.map((elm, index) => (

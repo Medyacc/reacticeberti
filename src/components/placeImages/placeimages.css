@@ -39,4 +39,15 @@
         padding-top: 0;
         padding-bottom: 0;
     }
+
+    .place-images .swiper-slide-active img {
+        transform: scale(1.3);
+    }
+}
+
+@media (max-width:450px) {
+
+    .place-images .swiper-slide-active img {
+        transform: scale(1.6);
+    }
 }
