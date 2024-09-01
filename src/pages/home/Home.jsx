@@ -8,6 +8,7 @@ const Scrolltotop = React.lazy(() => import('../../components/scrolltotop/Scroll
 const Story = React.lazy(() => import('../../components/story/Story'));
 const Swipermenu = React.lazy(() => import('../../components/swipermenu/Swipermenu'));
 const Translateiceberti = React.lazy(() => import('../../components/transalteiceberti/Translateiceberti'));
+const Placeimages = React.lazy(() => import('../../components/placeImages/Placeimages'));
 
 export default function Home() {
     return (
@@ -21,6 +22,7 @@ export default function Home() {
             <Swipermenu />
             <PureWater />
             <Translateiceberti />
+            <Placeimages />
             <Contact />
             <Footer />
         </Suspense>
