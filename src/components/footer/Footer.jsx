@@ -7,11 +7,12 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 export default function Footer() {
     const [showFooterUp, setShowFooterUp] = useState(false);
     const [isManuallyOpened, setIsManuallyOpened] = useState(false);
+    const location = useLocation();
     const date = new Date()
     const dateyear = date.getFullYear()
 
@@ -21,7 +22,7 @@ export default function Footer() {
     };
 
     const handleScroll = () => {
-        if (isManuallyOpened) return;
+        if (isManuallyOpened || location.pathname !== '/reacticeberti/') return;
 
         const scrollPosition = window.innerHeight + window.scrollY;
         const documentHeight = document.documentElement.scrollHeight;
@@ -34,12 +35,16 @@ export default function Footer() {
     };
 
     useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
+        if (location.pathname === '/reacticeberti/') {
+            window.addEventListener('scroll', handleScroll);
+        } else {
+            window.removeEventListener('scroll', handleScroll);
+        }
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, [isManuallyOpened]);
+    }, [isManuallyOpened, location.pathname]);
 
 
     return (

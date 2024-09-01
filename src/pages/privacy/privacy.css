@@ -1,10 +1,8 @@
 .privacy {
     background: url('/images/pattern.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat-y;
     padding-top: 130px;
-    padding-bottom: 150px;
-    height: 100vh;
+    padding-bottom: 100px;
 }
 
 .privacy-info {
@@ -13,7 +11,7 @@
     gap: 20px;
     background-color: white;
     border-radius: 10px;
-    padding: 30px 30px 200px;
+    padding: 30px 30px 100px;
     line-height: 30px;
 }
 

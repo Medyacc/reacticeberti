@@ -8,7 +8,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Privacy from './pages/privacy/Privacy';
 import Terms from './pages/terms/Terms';
 import Faqs from './pages/faqs/Faqs';
-import Contactus from './pages/contact/Contactus';
+import Contactus from './pages/contactus/Contactus';
 
 i18n
   .use(initReactI18next)
